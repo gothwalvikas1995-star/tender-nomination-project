@@ -86,7 +86,7 @@ SELECT
   u.name AS created_by_name
 FROM tenders t
 LEFT JOIN users u ON u.id = t.created_by
-WHERE t.status LIKE 'pending_%'
+WHERE t.status::text LIKE 'pending_%'
 
 UNION ALL
 
@@ -102,7 +102,7 @@ SELECT
   u.name AS created_by_name
 FROM nominations n
 LEFT JOIN users u ON u.id = n.created_by
-WHERE n.status LIKE 'pending_%'
+WHERE n.status::text LIKE 'pending_%'
 
 ORDER BY age_days DESC;
 
