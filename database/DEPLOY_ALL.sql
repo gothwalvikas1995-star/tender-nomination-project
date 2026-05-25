@@ -656,7 +656,10 @@ SELECT
   u.name AS created_by_name
 FROM tenders t
 LEFT JOIN users u ON u.id = t.created_by
-WHERE t.status::text LIKE 'pending_%'
+WHERE t.status IN (
+  'pending_cbod','pending_divhead','pending_pl','pending_core',
+  'pending_cfo','pending_sg','pending_accounts'
+)
 
 UNION ALL
 
@@ -672,7 +675,10 @@ SELECT
   u.name AS created_by_name
 FROM nominations n
 LEFT JOIN users u ON u.id = n.created_by
-WHERE n.status::text LIKE 'pending_%'
+WHERE n.status IN (
+  'pending_cbod','pending_divhead','pending_pl','pending_core',
+  'pending_cfo','pending_sg','pending_accounts'
+)
 
 ORDER BY age_days DESC;
 
