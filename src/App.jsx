@@ -169,6 +169,49 @@ const SEED_TENDERS = [
       {action:"DIVHEAD_APPROVED",by:"Rudraneel Chattopadhyay",role:"div_head",at:"2024-03-22 14:00",note:"Approved. Routing to SG."},
     ],
   },
+  { id:"t7", ref:"BID-2024-006", type:"tender", title:"NABL Laboratory Accreditation Outreach Programme",
+    ministry:"Department of Science & Technology", div:"NABL", status:"pending_accounts", priority:"high",
+    emd:95000, emdStatus:"submitted", bidMode:"Bank Guarantee", ddDetails:"BG/AXIS/2024/00982",
+    dl:"2024-04-25", value:4200000, websiteUrl:"https://dst.gov.in/nabl-outreach",
+    suggestedPL:"pl3@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
+    cbodRemarks:"Good strategic fit with NABL mandate.", accountsRemarks:"BG verification in progress, DD pending issue.",
+    createdBy:"cbod@qci.org", createdAt:"2024-02-10",
+    grossMarginProposed:19, grossMarginActual:0, proposedCost:4200000, actualCost:0, marginRemarks:"",
+    attachments:[{id:"a14",name:"DST_RFP_NABL.pdf",size:"1.5MB",by:"Rajesh Verma",at:"2024-02-10",url:"#"}],
+    auditLog:[
+      {action:"CREATED",by:"Rajesh Verma",role:"cbod_team",at:"2024-02-10 09:30",note:"Bid created. EMD < ₹1L → CFO route."},
+      {action:"DIVHEAD_APPROVED",by:"Ramanand Nagendra Shukla",role:"div_head",at:"2024-02-13 11:00",note:"Approved by Division Head."},
+      {action:"APPROVE",by:"Amit Gupta",role:"cfo",at:"2024-02-18 15:00",note:"CFO approved. Routing to Accounts for DD/BG processing."},
+    ],
+  },
+  { id:"t8", ref:"BID-2024-007", type:"tender", title:"NABCB Certification Body Recognition Study",
+    ministry:"Ministry of Commerce & Industry", div:"NABCB", status:"pending_cbod", priority:"low",
+    emd:0, emdStatus:"not_required", bidMode:"", ddDetails:"",
+    dl:"2024-06-15", value:2800000, websiteUrl:"https://commerce.gov.in/nabcb-study",
+    suggestedPL:"", evalType:"QBS (Quality Based Selection)", procType:"Single Source",
+    cbodRemarks:"", accountsRemarks:"",
+    createdBy:"cbod@qci.org", createdAt:"2024-04-05",
+    grossMarginProposed:0, grossMarginActual:0, proposedCost:2800000, actualCost:0, marginRemarks:"",
+    attachments:[],
+    auditLog:[
+      {action:"CREATED",by:"Rajesh Verma",role:"cbod_team",at:"2024-04-05 10:00",note:"Draft created. Pending CBOD internal review before division routing."},
+    ],
+  },
+  { id:"t9", ref:"BID-2024-008", type:"tender", title:"NBQP National Quality Awards Secretariat Support",
+    ministry:"Department for Promotion of Industry & Internal Trade", div:"NBQP", status:"cancelled", priority:"medium",
+    emd:110000, emdStatus:"forfeited", bidMode:"Demand Draft (DD)", ddDetails:"DD/HDFC/2024/00321",
+    dl:"2024-02-28", value:3600000, websiteUrl:"https://dpiit.gov.in/nqa2024",
+    suggestedPL:"pl2@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
+    cbodRemarks:"Withdrew after technical disqualification on eligibility criteria.", accountsRemarks:"EMD forfeited.",
+    createdBy:"cbod@qci.org", createdAt:"2024-01-05",
+    grossMarginProposed:15, grossMarginActual:0, proposedCost:3600000, actualCost:0, marginRemarks:"",
+    attachments:[],
+    auditLog:[
+      {action:"CREATED",by:"Rajesh Verma",role:"cbod_team",at:"2024-01-05 09:00",note:"Bid created."},
+      {action:"DIVHEAD_APPROVED",by:"Dr. Aishvarya Raj",role:"div_head",at:"2024-01-08 10:00",note:"Approved."},
+      {action:"CANCELLED_BY_CBOD",by:"Rajesh Verma",role:"cbod_team",at:"2024-02-20 09:00",note:"Technical disqualification — eligibility criteria not met. Bid cancelled."},
+    ],
+  },
 ];
 
 // ─── SEED NOMINATIONS ─────────────────────────────────────────
@@ -304,6 +347,68 @@ const SEED_NOMINATIONS = [
       {action:"SEND_BACK",by:"Varinder Singh Kanwar",role:"div_head",at:"2024-03-18 14:00",note:"Please revise pricing. ₹2.5Cr seems low for 22 districts. Sent back to Ankita Garg (PL)."},
     ],
   },
+  { id:"n5", ref:"NOM-2024-004", type:"nomination", title:"NABCB Certification Body Capacity Building",
+    ministry:"Ministry of Commerce & Industry", div:"NABCB", status:"pending_cfo", priority:"high",
+    createdBy:"pl3@qci.org", createdAt:"2024-02-15", value:3800000, emd:0, emdStatus:"not_required",
+    websiteUrl:"",
+    approach:"Capacity building programme for certification bodies seeking NABCB recognition.",
+    broadDetails:[{ministry:"Ministry of Commerce & Industry",spocClient:"Mr. Anil Sharma, Director",spocQci:"Dinesh Bhat",remarks:"DPIIT-referred engagement"}],
+    problemStatement:"Low awareness and technical capacity among emerging certification bodies for NABCB accreditation.",
+    targetGroup:"35 emerging certification bodies across India",
+    scopeOfWork:"Training workshops, documentation support, mock assessments, gap analysis reports.",
+    pastProjects:"QCI CB Capacity Building 2022",
+    coreTeam:"NABCB Expert-2, PM-1, Training Coordinator-1",
+    scalingPlan:"Extend to international certification bodies seeking IAF recognition",
+    keyDeliverables:"Training modules, Gap analysis reports, Mock assessment reports",
+    timeline:"5 months",
+    projectFee:3800000,
+    milestone1Pct:40, milestone1Amount:1520000, milestone1Date:"2024-04-01",
+    milestone2Pct:40, milestone2Amount:1520000, milestone2Date:"2024-06-15",
+    milestone3Pct:20, milestone3Amount:760000, milestone3Date:"2024-08-30",
+    employeeBenefit:550000, professionalFees:420000, honorarium:180000,
+    otherDirect:90000, travelling:140000, meeting:60000, technology:70000,
+    functionalLoad:10,
+    proposedCost:3800000, actualCost:0,
+    grossMarginProposed:22, grossMarginActual:0, marginRemarks:"On track for healthy margin",
+    financialsActual:[],
+    attachments:[{id:"a15",name:"NABCB_CapacityBuilding_Proposal.pdf",size:"1.4MB",by:"Dinesh Bhat",at:"2024-02-15",url:"#"}],
+    auditLog:[
+      {action:"CREATED",by:"Dinesh Bhat",role:"pl",at:"2024-02-15 10:00",note:"Nomination submitted to Core Team."},
+      {action:"CORE_TEAM_APPROVED",by:"Suman Sourav",role:"core_team",at:"2024-02-17 11:00",note:"Financials reviewed. Recommend proceeding."},
+      {action:"APPROVE",by:"Subroto Ghosh",role:"div_head",at:"2024-02-20 14:00",note:"Division Head approved. Routing to CFO."},
+    ],
+  },
+  { id:"n6", ref:"NOM-2024-005", type:"nomination", title:"PADD Perfumery Sector Quality Mapping",
+    ministry:"Ministry of MSME", div:"PADD", status:"cancelled", priority:"low",
+    createdBy:"pl1@qci.org", createdAt:"2024-01-20", value:1800000, emd:0, emdStatus:"not_required",
+    websiteUrl:"",
+    approach:"Quality mapping exercise for perfumery and allied disciplines MSME sector.",
+    broadDetails:[{ministry:"Ministry of MSME",spocClient:"Mr. Verma",spocQci:"Ankita Garg",remarks:"Pilot proposal, did not proceed"}],
+    problemStatement:"Lack of quality benchmarks for perfumery sector MSMEs.",
+    targetGroup:"Perfumery clusters in Kannauj and Mysore",
+    scopeOfWork:"Sector quality assessment and benchmark report.",
+    pastProjects:"None",
+    coreTeam:"Sector Expert-1, Analyst-1",
+    scalingPlan:"N/A — project did not proceed",
+    keyDeliverables:"Sector quality report",
+    timeline:"2 months",
+    projectFee:1800000,
+    milestone1Pct:50, milestone1Amount:900000, milestone1Date:"2024-03-01",
+    milestone2Pct:50, milestone2Amount:900000, milestone2Date:"2024-04-01",
+    milestone3Pct:0, milestone3Amount:0, milestone3Date:"",
+    employeeBenefit:300000, professionalFees:200000, honorarium:80000,
+    otherDirect:50000, travelling:60000, meeting:30000, technology:30000,
+    functionalLoad:10,
+    proposedCost:1800000, actualCost:0,
+    grossMarginProposed:9, grossMarginActual:0, marginRemarks:"Low margin — deprioritized",
+    financialsActual:[],
+    attachments:[],
+    auditLog:[
+      {action:"CREATED",by:"Ankita Garg",role:"pl",at:"2024-01-20 10:00",note:"Pilot nomination submitted."},
+      {action:"CORE_TEAM_APPROVED",by:"Suman Sourav",role:"core_team",at:"2024-01-22 11:00",note:"Approved with margin caveat."},
+      {action:"REJECT",by:"Rudraneel Chattopadhyay",role:"div_head",at:"2024-01-28 15:00",note:"Margin too low (9%) relative to effort. Not pursuing — cancelled."},
+    ],
+  },
 ];
 
 const SEED_NOTIFS = [
@@ -313,6 +418,10 @@ const SEED_NOTIFS = [
   {id:"no4",title:"Approved: BID-2024-002",msg:"Smart Cities Mission PMC fully approved and submitted",read:true,itemId:"t2",type:"tender"},
   {id:"no5",title:"New Nomination: NOM-2024-003",msg:"Ankita Garg created Rajasthan Skill Gap Assessment",read:true,itemId:"n4",type:"nomination"},
   {id:"no6",title:"Reminder: BID-2024-001",msg:"CFO approval pending for 12 days — please review",read:false,itemId:"t1",type:"tender"},
+  {id:"no7",title:"Approval required: BID-2024-008",msg:"NABCB Recognition Study awaiting your CBOD internal review",read:false,itemId:"t8",type:"tender"},
+  {id:"no8",title:"Approval required: NOM-2024-004",msg:"NABCB Capacity Building requires your CFO approval",read:false,itemId:"n5",type:"nomination"},
+  {id:"no9",title:"Accounts action needed: BID-2024-006",msg:"NABL Outreach Programme awaiting DD/BG issuance",read:false,itemId:"t7",type:"tender"},
+  {id:"no10",title:"Cancelled: NOM-2024-005",msg:"PADD Perfumery Sector Mapping cancelled due to low margin",read:true,itemId:"n6",type:"nomination"},
 ];
 
 // ─── BASE COMPONENTS ──────────────────────────────────────────
@@ -327,6 +436,101 @@ const Select = ({value,onChange,children,style={}}) => <select value={value} onC
 const Label = ({children,required}) => <div style={{fontSize:11,fontWeight:600,color:"#374151",marginBottom:4}}>{children}{required&&<span style={{color:"red",marginLeft:2}}>*</span>}</div>;
 const FG = ({label,required,children,col}) => <div style={col?{gridColumn:col}:{}}><Label required={required}>{label}</Label>{children}</div>;
 const Toast=({toast})=>toast?<div style={{position:"fixed",top:16,right:16,zIndex:9999,padding:"10px 18px",borderRadius:10,background:toast.type==="success"?"#15803d":toast.type==="info"?"#0077B6":"#dc2626",color:"white",fontSize:13,fontWeight:600,boxShadow:"0 4px 20px rgba(0,0,0,0.2)",display:"flex",alignItems:"center",gap:8,maxWidth:360}}>{toast.type==="success"?"✅":toast.type==="info"?"ℹ️":"❌"} {toast.msg}</div>:null;
+
+// ─── STAGE GATE BAR (top tracker) ─────────────────────────────
+const TENDER_GATES = [
+  {key:"pending_divhead",label:"Div Head"},
+  {key:"pending_cfo_sg",label:"CFO / SG"},
+  {key:"pending_accounts",label:"Accounts"},
+  {key:"approved",label:"Approved"},
+];
+const NOM_GATES = [
+  {key:"pending_core",label:"Core Team"},
+  {key:"pending_divhead",label:"Div Head"},
+  {key:"pending_cfo",label:"CFO"},
+  {key:"pending_sg",label:"SG"},
+  {key:"approved",label:"Approved"},
+];
+function gateIndex(status,gates){
+  if(status==="approved"||status==="won") return gates.length-1;
+  if(status==="cancelled"||status==="lost"||status==="sent_back") return -1;
+  if(status==="pending_cfo"||status==="pending_sg") return gates.findIndex(g=>g.key==="pending_cfo_sg"||g.key==="pending_cfo"||g.key==="pending_sg");
+  return gates.findIndex(g=>g.key===status);
+}
+function StageGateBar({status,type}){
+  const gates = type==="tender"?TENDER_GATES:NOM_GATES;
+  const idx = gateIndex(status,gates);
+  const isTerminal = ["cancelled","lost","sent_back"].includes(status);
+  return <div style={{display:"flex",alignItems:"center",gap:0,background:"white",border:`1px solid ${C.border}`,borderRadius:10,padding:"10px 16px",marginBottom:14,overflowX:"auto"}}>
+    {isTerminal&&<div style={{display:"flex",alignItems:"center",gap:8,color:status==="sent_back"?"#7c3aed":C.red,fontWeight:700,fontSize:12}}>
+      {status==="sent_back"?"↩ Sent Back for Revision":status==="cancelled"?"🚫 Cancelled":"❌ Lost"}
+    </div>}
+    {!isTerminal&&gates.map((g,i)=>{
+      const done = i<idx, active = i===idx, future = i>idx;
+      return <div key={g.key} style={{display:"flex",alignItems:"center",flex:i<gates.length-1?1:"0 0 auto"}}>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:4,minWidth:74}}>
+          <div style={{width:26,height:26,borderRadius:999,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,fontWeight:700,background:done?C.green:active?C.blue:"#e5e7eb",color:done||active?"white":"#9ca3af",boxShadow:active?`0 0 0 3px ${C.lightbg}`:"none"}}>{done?"✓":i+1}</div>
+          <div style={{fontSize:10,fontWeight:active?700:500,color:done?C.green:active?C.blue:"#9ca3af",textAlign:"center",whiteSpace:"nowrap"}}>{g.label}</div>
+        </div>
+        {i<gates.length-1&&<div style={{flex:1,height:2,background:done?C.green:"#e5e7eb",margin:"0 4px",marginBottom:16}}/>}
+      </div>;
+    })}
+  </div>;
+}
+
+// ─── QCI CHART OF ACCOUNTS — Expense Categories for Cash Outflow drill-down ──
+const QCI_EXPENSE_CATEGORIES = [
+  {code:"5003120",name:"Manpower Cost",group:"Personnel"},
+  {code:"5003105",name:"Professional Charges - Internal",group:"Personnel"},
+  {code:"5003110",name:"Professional Charges - YP",group:"Personnel"},
+  {code:"5003115",name:"Stipend",group:"Personnel"},
+  {code:"5003125",name:"Retainer Fees - YPs & SPs",group:"Personnel"},
+  {code:"5003510",name:"Honorarium",group:"Personnel"},
+  {code:"5003590",name:"Professional Charges - External",group:"Personnel"},
+  {code:"5003520",name:"Assessment Charges",group:"Personnel"},
+  {code:"5003575",name:"Daily Allowance - Assessors/Experts",group:"Personnel"},
+  {code:"5003512",name:"Travel Expenses - Assessors/Experts",group:"Travel"},
+  {code:"5010905",name:"Air Travel - Domestic",group:"Travel"},
+  {code:"5010910",name:"Air Travel - International",group:"Travel"},
+  {code:"5010915",name:"Rail Travel - Domestic",group:"Travel"},
+  {code:"5010920",name:"Hotel Stay - Domestic",group:"Travel"},
+  {code:"5010925",name:"Hotel Stay - International",group:"Travel"},
+  {code:"5010930",name:"Food Expense - Travel",group:"Travel"},
+  {code:"5010935",name:"Ground Transportation - Rent a Cab",group:"Travel"},
+  {code:"5010940",name:"Ground Transportation - Uber/Ola",group:"Travel"},
+  {code:"5010945",name:"Ground Transportation - Domestic",group:"Travel"},
+  {code:"5010950",name:"Daily Allowance - Domestic",group:"Travel"},
+  {code:"5010960",name:"Daily Allowance - International",group:"Travel"},
+  {code:"5012410",name:"Food Expenses - Meeting",group:"Meeting"},
+  {code:"5012420",name:"Banquets & Rooms - Meeting",group:"Meeting"},
+  {code:"5003580",name:"Committee Participation Fee",group:"Meeting"},
+  {code:"5003560",name:"Seminar/Workshop Expense",group:"Meeting"},
+  {code:"5003570",name:"Training Expense",group:"Meeting"},
+  {code:"5010605",name:"Technology Cost - Web Portal/Mobile App",group:"Technology"},
+  {code:"5010610",name:"Technology Cost - Support Services",group:"Technology"},
+  {code:"5010615",name:"Technology Cost - ERP",group:"Technology"},
+  {code:"5010620",name:"Technology Cost - AMC",group:"Technology"},
+  {code:"5003540",name:"Printing Charges - Standards",group:"Other Direct"},
+  {code:"5010815",name:"Printing & Stationary",group:"Other Direct"},
+  {code:"5010805",name:"Office Expenses",group:"Other Direct"},
+  {code:"5010810",name:"Consumables Expense - General",group:"Other Direct"},
+  {code:"5010330",name:"Advocate Fee",group:"Other Direct"},
+  {code:"5010320",name:"Internal Audit Fee",group:"Other Direct"},
+  {code:"5012806",name:"Tender Filing Charges",group:"Other Direct"},
+  {code:"5012805",name:"Miscellaneous Expenses",group:"Other Direct"},
+];
+const EXPENSE_GROUPS = [...new Set(QCI_EXPENSE_CATEGORIES.map(e=>e.group))];
+
+// ─── Gross Margin calculation helper ──────────────────────────
+function calcGM(inflow, outflowRows, functionalLoadPct){
+  const totalOutflow = outflowRows.reduce((s,r)=>s+(parseFloat(r.amount)||0),0);
+  const funcLoad = totalOutflow*(parseFloat(functionalLoadPct)||0)/100;
+  const totalCost = totalOutflow+funcLoad;
+  const margin = inflow-totalCost;
+  const marginPct = inflow>0?(margin/inflow*100):0;
+  return {totalOutflow,funcLoad,totalCost,margin,marginPct};
+}
+
 
 const NAV_ITEMS=[
   {id:"dash",      label:"Dashboard",         roles:["all"]},
@@ -460,7 +664,7 @@ export default function QCIPortal() {
           <div style={{fontSize:12,color:"#6b7280",flexShrink:0}}>👤 {currentUser.name}</div>
         </header>
 
-        <main style={{flex:1,overflowY:"auto",padding:"20px 24px"}} className="fade-up">
+        <main style={{flex:1,overflowY:"auto",overflowX:"hidden",padding:"16px 20px",width:"100%",boxSizing:"border-box"}} className="fade-up">
           {page==="dash"          && <DashPage tenders={tenders} nominations={nominations} myPending={myPending} navTo={navTo} user={currentUser} kpiDetail={kpiDetail} setKpiDetail={setKpiDetail}/>}
           {page==="tenders"       && <TendersPage tenders={tenders} navTo={navTo} user={currentUser}/>}
           {page==="tender-detail" && <TenderDetail item={selectedItem} tenders={tenders} setTenders={setTenders} navTo={navTo} user={currentUser} showToast={showToast} addNotif={addNotif} users={users} goBack={goBack}/>}
@@ -662,7 +866,7 @@ function DashPage({tenders,nominations,myPending,navTo,user,kpiDetail,setKpiDeta
   }).filter(d=>d.total>0);
 
   // KPI detail views
-  if(kpiDetail==="pipeline") return <div style={{maxWidth:1000}}>
+  if(kpiDetail==="pipeline") return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={()=>setKpiDetail(null)} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12}}>← Back to Dashboard</button>
       <h1 style={{margin:0,fontSize:18,fontWeight:700,color:C.dark}}>Pipeline Opportunities</h1>
@@ -683,7 +887,7 @@ function DashPage({tenders,nominations,myPending,navTo,user,kpiDetail,setKpiDeta
     </Card>
   </div>;
 
-  if(kpiDetail==="cancelled") return <div style={{maxWidth:1000}}>
+  if(kpiDetail==="cancelled") return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={()=>setKpiDetail(null)} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12}}>← Back to Dashboard</button>
       <h1 style={{margin:0,fontSize:18,fontWeight:700,color:C.dark}}>Cancelled Opportunities</h1>
@@ -714,7 +918,7 @@ function DashPage({tenders,nominations,myPending,navTo,user,kpiDetail,setKpiDeta
 
   const maxDiv=Math.max(...divStats.map(d=>d.total),1);
 
-  return <div style={{maxWidth:1100}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:18,flexWrap:"wrap",gap:10}}>
       <div>
         <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Dashboard</h1>
@@ -792,7 +996,7 @@ function TendersPage({tenders,navTo,user}) {
   const [search,setSearch]=useState("");
   const [statusF,setStatusF]=useState("");
   const filtered=tenders.filter(t=>(!search||t.title.toLowerCase().includes(search.toLowerCase())||t.ref.includes(search))&&(!statusF||t.status===statusF));
-  return <div style={{maxWidth:1100}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16,flexWrap:"wrap",gap:10}}>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Tender Bids</h1>
       {["cbod_team","admin"].includes(user.role)&&<Btn onClick={()=>navTo("new-tender")}>+ New Tender Bid</Btn>}
@@ -889,13 +1093,14 @@ function TenderDetail({item,tenders,setTenders,navTo,user,showToast,addNotif,use
     showToast("Gross margin saved"); setGmf({});
   };
 
-  const TABS=["overview","financials","documents","comments","audit"];
+  const TABS=["overview","financials","remarks","documents","comments","audit"];
 
-  return <div style={{maxWidth:950}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:14}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <div style={{fontSize:12,color:"#9ca3af"}}>Tender Bid Detail</div>
     </div>
+    <StageGateBar status={t.status} type="tender"/>
     <Card style={{marginBottom:14}}>
       <div style={{display:"flex",gap:8,flexWrap:"wrap",alignItems:"center",marginBottom:8}}>
         <span style={{fontSize:10,padding:"2px 8px",borderRadius:999,background:"#dbeafe",color:"#1d4ed8",fontWeight:600}}>Tender/Bid</span>
@@ -953,7 +1158,21 @@ function TenderDetail({item,tenders,setTenders,navTo,user,showToast,addNotif,use
     {tab==="overview"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14}}>
       <Card>
         <div style={{fontSize:12,fontWeight:700,color:C.dark,marginBottom:12}}>Bid Details</div>
-        {[["Reference",t.ref],["Division",t.div||"—"],["Ministry",t.ministry||"—"],["EMD Amount",fmtL(t.emd)],["EMD Status",(t.emdStatus||"—").replace(/_/g," ")],["Bid Security Mode",t.bidMode||"—"],["DD Details",t.ddDetails||"—"],["Submission Deadline",t.dl||"—"],["Procurement Type",t.procType||"—"],["Evaluation Method",t.evalType||"—"],["Opportunity URL",t.websiteUrl||"—"],["Suggested PL",t.suggestedPL?getUserName(t.suggestedPL)+" ("+t.suggestedPL+")":"—"],["CBOD Remarks",t.cbodRemarks||"—"],["Accounts Remarks",t.accountsRemarks||"—"]].map(([l,v])=><div key={l} style={{display:"flex",gap:8,fontSize:12,marginBottom:7}}><span style={{width:145,flexShrink:0,color:"#6b7280"}}>{l}</span><span style={{fontWeight:500,color:"#111827",flex:1,wordBreak:"break-word"}}>{v}</span></div>)}
+        {[
+          ["Reference",t.ref],["Tender ID",t.tenderId||"—"],["Division",t.div||"—"],["Ministry",t.ministry||"—"],
+          ["Tender Category",t.tenderCategory||"—"],["Tender Type",t.tenderType||t.procType||"—"],
+          ["Estimated Tender Value",t.estimatedValue?fmtL(t.estimatedValue):"—"],
+          ["EMD Amount",fmtL(t.emd)],["EMD Status",(t.emdStatus||"—").replace(/_/g," ")],
+          ["EMD Mode of Payment",t.emdMode||t.bidMode||"—"],["DD Details",t.ddDetails||"—"],
+          ["Processing Fee",t.processingFeeAmt?fmtL(t.processingFeeAmt)+" via "+(t.processingFeeMode||"—"):"—"],
+          ["Tender Form Fee",t.tenderFormFeeAmt?fmtL(t.tenderFormFeeAmt)+" via "+(t.tenderFormFeeMode||"—"):"—"],
+          ["Online Bid Submission End","—"],["Pre-Bid Meeting Venue",t.preBidMeetingVenue||"—"],
+          ["Tender Portal / Source",t.sourceType||"—"],["Source URL",t.sourceUrl||t.websiteUrl||"—"],
+          ["Suggested PL",t.suggestedPL?getUserName(t.suggestedPL)+" ("+t.suggestedPL+")":"—"],
+          ["Objective of RFP",t.objectiveOfRFP||t.minQualif||"—"],
+          ["CBOD Remarks",t.cbodRemarks||"—"],["Accounts Remarks",t.accountsRemarks||"—"],
+          ["Remarks",t.remarks||"—"],
+        ].map(([l,v])=><div key={l} style={{display:"flex",gap:8,fontSize:12,marginBottom:7}}><span style={{width:170,flexShrink:0,color:"#6b7280"}}>{l}</span><span style={{fontWeight:500,color:"#111827",flex:1,wordBreak:"break-word"}}>{v}</span></div>)}
       </Card>
       <div>
         <Card style={{marginBottom:14}}>
@@ -974,7 +1193,31 @@ function TenderDetail({item,tenders,setTenders,navTo,user,showToast,addNotif,use
       </div>
     </div>}
 
-    {tab==="financials"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14}}>
+    {tab==="financials"&&<div>
+      {(t.milestones||t.outflowRows)&&<Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.dark,marginBottom:4}}>Financial Charter</div>
+        <div style={{fontSize:10,color:"#9ca3af",marginBottom:12}}>Visible throughout all workflow stages · Basis: {t.feeBasis==="total_project_fee"?"Total Project Fee":"Project Fee"}</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14}}>
+          <div>
+            <div style={{fontSize:11,fontWeight:700,color:"#374151",marginBottom:8}}>Cash Inflow — Milestones</div>
+            {(t.milestones||[]).map(m=><div key={m.id} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"6px 0",borderBottom:`1px solid #f3f4f6`}}>
+              <span style={{color:"#374151"}}>{m.label} ({m.pct}%)</span><span style={{fontWeight:600}}>{fmtL(m.amount)} {m.date?`· ${m.date}`:""}</span>
+            </div>)}
+          </div>
+          <div>
+            <div style={{fontSize:11,fontWeight:700,color:"#374151",marginBottom:8}}>Cash Outflow — Expense Drill-down</div>
+            {(t.outflowRows||[]).map(r=><div key={r.id} style={{display:"flex",justifyContent:"space-between",fontSize:12,padding:"6px 0",borderBottom:`1px solid #f3f4f6`}}>
+              <span style={{color:"#374151"}}>{r.name||"—"} <span style={{color:"#9ca3af",fontSize:10}}>({r.group})</span></span><span style={{fontWeight:600}}>{fmtL(r.amount)}</span>
+            </div>)}
+          </div>
+        </div>
+        {t.lowMarginReason&&<div style={{marginTop:12,padding:"10px 12px",background:"#fef2f2",borderRadius:8}}>
+          <div style={{fontSize:11,fontWeight:700,color:C.red,marginBottom:2}}>⚠️ Reason for Lower Margin</div>
+          <div style={{fontSize:12,color:"#374151"}}>{t.lowMarginReason}</div>
+        </div>}
+      </Card>}
+
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14}}>
       <Card>
         <div style={{fontSize:12,fontWeight:700,color:C.dark,marginBottom:12}}>Gross Margin Tracker</div>
         {[["Proposed Project Value",fmtL(t.proposedCost)],["Actual Project Cost",fmtL(t.actualCost)],["Proposed Gross Margin %",`${t.grossMarginProposed||0}%`],["Actual Gross Margin %",`${t.grossMarginActual||0}%`],["Remarks",t.marginRemarks||"—"]].map(([l,v])=><div key={l} style={{display:"flex",gap:8,fontSize:12,marginBottom:8}}><span style={{width:170,flexShrink:0,color:"#6b7280"}}>{l}</span><span style={{fontWeight:600,color:"#111827"}}>{v}</span></div>)}
@@ -998,14 +1241,20 @@ function TenderDetail({item,tenders,setTenders,navTo,user,showToast,addNotif,use
             <div style={{display:"flex",justifyContent:"space-between",fontSize:12,marginBottom:4}}><span>Actual GM</span><span style={{fontWeight:700,color:(t.grossMarginActual||0)>=(t.grossMarginProposed||0)?C.green:C.red}}>{t.grossMarginActual||0}%</span></div>
             <div style={{height:10,background:"#f3f4f6",borderRadius:999,overflow:"hidden"}}><div style={{background:(t.grossMarginActual||0)>=(t.grossMarginProposed||0)?C.green:C.red,width:`${Math.min(t.grossMarginActual||0,100)}%`,height:"100%"}}/></div>
           </div>
-          <div style={{marginTop:12,padding:"10px 12px",background:(t.grossMarginActual||0)<4&&t.actualCost>0?"#fef2f2":"#f0fdf4",borderRadius:8}}>
-            <div style={{fontSize:12,color:(t.grossMarginActual||0)<4&&t.actualCost>0?C.red:C.green,fontWeight:700}}>
-              {t.actualCost>0?((t.grossMarginActual||0)<4?"⚠️ Actual GM below 4% threshold!":"✅ Healthy margin"):"Actual data not yet available"}
+          <div style={{marginTop:12,padding:"10px 12px",background:(t.grossMarginActual||0)<7&&t.actualCost>0?"#fef2f2":"#f0fdf4",borderRadius:8}}>
+            <div style={{fontSize:12,color:(t.grossMarginActual||0)<7&&t.actualCost>0?C.red:C.green,fontWeight:700}}>
+              {t.actualCost>0?((t.grossMarginActual||0)<7?"⚠️ Actual GM below 7% threshold!":"✅ Healthy margin"):"Actual data not yet available"}
             </div>
           </div>
         </>}
       </Card>
+      </div>
     </div>}
+
+    {tab==="remarks"&&<Card>
+      <div style={{fontSize:12,fontWeight:700,color:C.dark,marginBottom:12}}>Remarks</div>
+      <div style={{fontSize:12,color:"#374151",whiteSpace:"pre-wrap"}}>{t.remarks||"No remarks added yet."}</div>
+    </Card>}
 
     {tab==="documents"&&<Card>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
@@ -1062,17 +1311,46 @@ function TenderDetail({item,tenders,setTenders,navTo,user,showToast,addNotif,use
 // ─── NEW TENDER FULL FORM ─────────────────────────────────────
 function NewTenderFull({tenders,setTenders,navTo,showToast,user,addNotif}) {
   const [f,setF]=useState({
-    title:"",ministry:"",div:"",priority:"medium",websiteUrl:"",suggestedPL:"",
-    emd:"",bidMode:"",evalType:"",procType:"",ddDetails:"",dl:"",
-    techBidDl:"",finBidDl:"",preBidDate:"",corrigendum:0,
-    cbodRemarks:"",accountsRemarks:"",
-    consortiumAllowed:false,consortiumLead:"QCI",minQualif:"",
-    proposedCost:"",grossMarginProposed:"",marginRemarks:"",
+    title:"",tenderId:"",ministry:"",div:"",priority:"medium",
+    sourceUrl:"",sourceType:"",tenderCategory:"",tenderType:"",
+    estimatedValue:"",suggestedPL:"",
+
+    // EMD & Other Fee Details
+    emd:"",emdMode:"",ddDetails:"",
+    processingFeeAmt:"",processingFeeMode:"",
+    tenderFormFeeAmt:"",tenderFormFeeMode:"",
+
+    // Key Dates
+    bidPublishedDate:"",
+    onlineBidEndDate:"",
+    physicalDocsApplicable:true,physicalDocsEndDate:"",
+    preBidMeetingDate:"",preBidMeetingVenue:"",
+
+    // Objective & CBOD Remarks
+    objectiveOfRFP:"",cbodRemarks:"",
+    consortiumAllowed:false,consortiumLead:"QCI",
+
+    // Remarks
+    remarks:"",
+
     attachments:[],
   });
   const set=(k,v)=>setF(p=>({...p,[k]:v}));
-  const fileRef=useRef();
   const [attPreviews,setAttPreviews]=useState([]);
+
+  // Financial Charter state (vertical, dynamic milestones)
+  const [feeBasis,setFeeBasis]=useState("project_fee"); // project_fee | total_project_fee
+  const [milestones,setMilestones]=useState([
+    {id:genId(),label:"1st Milestone — Work Order",pct:40,amount:0,date:""},
+    {id:genId(),label:"2nd Milestone — Sample Collection",pct:40,amount:0,date:""},
+    {id:genId(),label:"3rd Milestone — Final Report",pct:20,amount:0,date:""},
+  ]);
+  const [outflowRows,setOutflowRows]=useState([
+    {id:genId(),group:"Personnel",code:"5003120",name:"Manpower Cost",amount:0},
+    {id:genId(),group:"Travel",code:"5010905",name:"Air Travel - Domestic",amount:0},
+  ]);
+  const [functionalLoadPct,setFunctionalLoadPct]=useState(10);
+  const [lowMarginReason,setLowMarginReason]=useState("");
 
   if(!["cbod_team","admin"].includes(user.role)) return <Card style={{textAlign:"center",padding:40}}><div style={{fontSize:28,marginBottom:8}}>🔒</div><div>Only CBOD Team can create tender bids.</div></Card>;
 
@@ -1082,20 +1360,40 @@ function NewTenderFull({tenders,setTenders,navTo,showToast,user,addNotif}) {
     e.target.value="";
   };
 
+  const totalInflow=milestones.reduce((s,m)=>s+(parseFloat(m.amount)||0),0);
+  const gm=calcGM(totalInflow,outflowRows,functionalLoadPct);
+  const showLowMarginField = totalInflow>0 && gm.marginPct<7;
+
+  const addMilestone=()=>setMilestones(p=>[...p,{id:genId(),label:`Milestone ${p.length+1}`,pct:0,amount:0,date:""}]);
+  const removeMilestone=(id)=>setMilestones(p=>p.filter(m=>m.id!==id));
+  const updateMilestone=(id,k,v)=>setMilestones(p=>p.map(m=>m.id===id?{...m,[k]:v}:m));
+
+  const addOutflowRow=()=>setOutflowRows(p=>[...p,{id:genId(),group:EXPENSE_GROUPS[0],code:"",name:"",amount:0}]);
+  const removeOutflowRow=(id)=>setOutflowRows(p=>p.filter(r=>r.id!==id));
+  const updateOutflowRow=(id,k,v)=>setOutflowRows(p=>p.map(r=>{
+    if(r.id!==id) return r;
+    if(k==="code"){ const cat=QCI_EXPENSE_CATEGORIES.find(c=>c.code===v); return {...r,code:v,name:cat?cat.name:r.name,group:cat?cat.group:r.group}; }
+    return {...r,[k]:v};
+  }));
+
   const submit=(e)=>{
     e.preventDefault();
     if(!f.title||!f.ministry||!f.div){showToast("Fill required fields (Title, Ministry, Division)","error");return;}
+    if(showLowMarginField&&!lowMarginReason.trim()){showToast("Reason for Lower Margin is mandatory when GM < 7%","error");return;}
     const ref=`BID-${new Date().getFullYear()}-${String(tenders.length+1).padStart(3,"0")}`;
     const emdAmt=parseFloat(f.emd)||0;
     const newT={
       ...f,id:genId(),ref,type:"tender",track:"tender",status:"pending_divhead",
       emd:emdAmt,emdStatus:emdAmt>0?"pending":"not_required",
-      value:parseFloat(f.proposedCost)||emdAmt*10,
-      proposedCost:parseFloat(f.proposedCost)||0,actualCost:0,
-      grossMarginProposed:parseFloat(f.grossMarginProposed)||0,grossMarginActual:0,
+      value:totalInflow||emdAmt*10,
+      proposedCost:gm.totalCost,actualCost:0,
+      milestones,outflowRows,functionalLoad:functionalLoadPct,feeBasis,
+      grossMarginProposed:Math.round(gm.marginPct*10)/10,grossMarginActual:0,
+      lowMarginReason:showLowMarginField?lowMarginReason:"",
+      websiteUrl:f.sourceUrl,
       createdBy:user.email,createdAt:now(),
       attachments:attPreviews,
-      auditLog:[{action:"CREATED",by:user.name,role:user.role,at:new Date().toLocaleString("en-IN"),note:`Created. EMD: ₹${emdAmt.toLocaleString("en-IN")}. ${emdAmt>=100000?"EMD ≥ ₹1L → SG route.":"EMD < ₹1L → CFO route."}`}],
+      auditLog:[{action:"CREATED",by:user.name,role:user.role,at:new Date().toLocaleString("en-IN"),note:`Created. EMD: ₹${emdAmt.toLocaleString("en-IN")}. ${emdAmt>=100000?"EMD ≥ ₹1L → SG route.":"EMD < ₹1L → CFO route."} GM: ${gm.marginPct.toFixed(1)}%.`}],
     };
     setTenders(p=>[newT,...p]);
     addNotif(`New Bid: ${ref}`,`${f.title} created by CBOD Team — Division Head approval needed.`,newT.id,"tender");
@@ -1103,69 +1401,155 @@ function NewTenderFull({tenders,setTenders,navTo,showToast,user,addNotif}) {
     navTo("tenders");
   };
 
-  const PROCTYPES=["Open Tender","Limited Tender","GEM Portal","Nomination","World Bank","ADB","CPPP","Single Source","Other"];
-  const EVALTYPES=["QCBS (Quality & Cost Based Selection)","L1 (Lowest Bidder)","LCS (Least Cost Selection)","FBS (Fixed Budget Selection)","QBS (Quality Based Selection)","Negotiated","CQS"];
-  const BIDMODES=["Bank Guarantee","Demand Draft (DD)","Online Payment (GeM)","NEFT/RTGS","Fixed Deposit Receipt","Insurance Surety Bond","Not Required"];
+  const SOURCE_TYPES=["CPP Portal","GeM","State e-Procurement Portal","Client Website","Email","Other"];
+  const TENDER_CATEGORIES=["Third Party Inspection","Third Party Evaluation/Assessment","Third Party Verification","Education & Training","Policy & Strategy","PMU","Empanelment","Others"];
+  const TENDER_TYPES=["Open Tender","Limited Tender","GEM Portal","Nomination","World Bank","ADB","CPPP","Single Source","Other"];
+  const EMD_MODES=["Demand Draft","NEFT/RTGS","Payment via Portal","Fixed Deposit Receipt","Bank Guarantee","Insurance Surety Bond","Exempted","Not Applicable"];
+  const FEE_MODES=["Demand Draft","NEFT/RTGS","Payment via Portal"];
 
-  return <div style={{maxWidth:800}}>
+  return <div style={{maxWidth:1150}}>
     <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:14}}>
       <button onClick={()=>navTo("tenders")} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>New Tender Bid</h1>
     </div>
     <p style={{fontSize:12,color:"#6b7280",marginBottom:18}}>Workflow: CBOD → Division Head → CFO/SG (based on EMD) → Accounts</p>
     <form onSubmit={submit}>
-      {[
-        {title:"1. Basic Details",fields:[
-          {l:"Bid Title",k:"title",req:true,col:"1/-1"},
-          {l:"Ministry / Organisation",k:"ministry",req:true},
-          {l:"Board/Division",k:"div",type:"divselect",req:true},
-          {l:"Priority",k:"priority",type:"select",opts:["low","medium","high","critical"]},
-          {l:"Opportunity Website URL",k:"websiteUrl",ph:"https://cppp.gov.in/..."},
-          {l:"Suggested Project Lead",k:"suggestedPL",ph:"pl@qci.org"},
-        ]},
-        {title:"2. Procurement Details",fields:[
-          {l:"Procurement Type",k:"procType",type:"select",opts:PROCTYPES},
-          {l:"Evaluation Method",k:"evalType",type:"select",opts:EVALTYPES},
-          {l:"EMD Amount (₹)",k:"emd",type:"number",ph:"170000"},
-          {l:"Bid Security Mode",k:"bidMode",type:"select",opts:BIDMODES},
-          {l:"DD / Payment Details",k:"ddDetails",ph:"DD No, Bank, Date"},
-          {l:"Corrigendum Count",k:"corrigendum",type:"number",ph:"0"},
-        ]},
-        {title:"3. Key Dates",fields:[
-          {l:"Submission Deadline",k:"dl",type:"date"},
-          {l:"Technical Bid Deadline",k:"techBidDl",type:"date"},
-          {l:"Financial Bid Deadline",k:"finBidDl",type:"date"},
-          {l:"Pre-Bid Meeting Date",k:"preBidDate",type:"date"},
-        ]},
-        {title:"4. Financial Details",fields:[
-          {l:"Proposed Project Value (₹)",k:"proposedCost",type:"number",ph:"8500000"},
-          {l:"Proposed Gross Margin %",k:"grossMarginProposed",type:"number",ph:"18"},
-          {l:"Margin Remarks",k:"marginRemarks",ph:"Notes on margin assumptions",col:"1/-1"},
-        ]},
-        {title:"5. Eligibility & CBOD Remarks",fields:[
-          {l:"Minimum Qualification Criteria",k:"minQualif",type:"textarea",col:"1/-1",ph:"e.g. 5 years experience in health sector, ISO certified..."},
-          {l:"CBOD Remarks",k:"cbodRemarks",type:"textarea",col:"1/-1",ph:"Go/No-Go rationale, strategic notes..."},
-        ]},
-      ].map(({title,fields})=><Card key={title} style={{marginBottom:14}}>
-        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>{title}</div>
+
+      {/* 1. BASIC DETAILS */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>1. Basic Details</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-          {fields.map(fl=><div key={fl.k} style={fl.col?{gridColumn:fl.col}:{}}>
-            <Label required={fl.req}>{fl.l}</Label>
-            {fl.type==="divselect"?<Select value={f[fl.k]} onChange={e=>set(fl.k,e.target.value)}><option value="">Select Board/Division</option>{QCI_DIVISIONS.map(d=><option key={d.key} value={d.key}>{d.key}</option>)}</Select>
-            :fl.type==="select"?<Select value={f[fl.k]} onChange={e=>set(fl.k,e.target.value)}><option value="">Select...</option>{fl.opts.map(o=><option key={o} value={o}>{o}</option>)}</Select>
-            :fl.type==="textarea"?<Textarea value={f[fl.k]} onChange={e=>set(fl.k,e.target.value)} placeholder={fl.ph}/>
-            :<Input type={fl.type||"text"} value={f[fl.k]} onChange={e=>set(fl.k,e.target.value)} placeholder={fl.ph}/>}
+          <FG label="Bid Title" required col="1/-1"><Input value={f.title} onChange={e=>set("title",e.target.value)} required/></FG>
+          <FG label="Tender ID"><Input value={f.tenderId} onChange={e=>set("tenderId",e.target.value)} placeholder="e.g. GEM/2024/B/1234"/></FG>
+          <FG label="Ministry / Organisation" required><Input value={f.ministry} onChange={e=>set("ministry",e.target.value)}/></FG>
+          <FG label="Board/Division" required><Select value={f.div} onChange={e=>set("div",e.target.value)}><option value="">Select Board/Division</option>{QCI_DIVISIONS.map(d=><option key={d.key} value={d.key}>{d.key}</option>)}</Select></FG>
+          <FG label="Priority"><Select value={f.priority} onChange={e=>set("priority",e.target.value)}>{["low","medium","high","critical"].map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="Tender Portal / Source URL"><Input value={f.sourceUrl} onChange={e=>set("sourceUrl",e.target.value)} placeholder="https://..."/></FG>
+          <FG label="Source Type"><Select value={f.sourceType} onChange={e=>set("sourceType",e.target.value)}><option value="">Select...</option>{SOURCE_TYPES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="Tender Category"><Select value={f.tenderCategory} onChange={e=>set("tenderCategory",e.target.value)}><option value="">Select...</option>{TENDER_CATEGORIES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="Tender Type"><Select value={f.tenderType} onChange={e=>set("tenderType",e.target.value)}><option value="">Select...</option>{TENDER_TYPES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="Estimated Tender Value (₹)"><Input type="number" value={f.estimatedValue} onChange={e=>set("estimatedValue",e.target.value)} placeholder="Optional"/></FG>
+          <FG label="Suggested Project Lead"><Input value={f.suggestedPL} onChange={e=>set("suggestedPL",e.target.value)} placeholder="pl@qci.org"/></FG>
+        </div>
+      </Card>
+
+      {/* 2. EMD & OTHER FEE DETAILS */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>2. EMD & Other Fee Details</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+          <FG label="EMD Amount (₹)"><Input type="number" value={f.emd} onChange={e=>set("emd",e.target.value)} placeholder="170000"/></FG>
+          <FG label="EMD Mode of Payment"><Select value={f.emdMode} onChange={e=>set("emdMode",e.target.value)}><option value="">Select...</option>{EMD_MODES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="DD / Payment Details" col="1/-1"><Input value={f.ddDetails} onChange={e=>set("ddDetails",e.target.value)} placeholder="DD No, Bank, Date"/></FG>
+          <FG label="Processing Fee Amount (₹)"><Input type="number" value={f.processingFeeAmt} onChange={e=>set("processingFeeAmt",e.target.value)}/></FG>
+          <FG label="Processing Fee Mode of Payment"><Select value={f.processingFeeMode} onChange={e=>set("processingFeeMode",e.target.value)}><option value="">Select...</option>{FEE_MODES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+          <FG label="Tender Form Fee Amount (₹)"><Input type="number" value={f.tenderFormFeeAmt} onChange={e=>set("tenderFormFeeAmt",e.target.value)}/></FG>
+          <FG label="Tender Form Fee Mode of Payment"><Select value={f.tenderFormFeeMode} onChange={e=>set("tenderFormFeeMode",e.target.value)}><option value="">Select...</option>{FEE_MODES.map(o=><option key={o} value={o}>{o}</option>)}</Select></FG>
+        </div>
+      </Card>
+
+      {/* 3. KEY DATES */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>3. Key Dates</div>
+        <div style={{fontSize:10,color:"#9ca3af",marginBottom:8}}>Format: DD-MMM-YYYY, HH:MM AM/PM</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+          <FG label="Bid Published Date"><Input type="datetime-local" value={f.bidPublishedDate} onChange={e=>set("bidPublishedDate",e.target.value)}/></FG>
+          <FG label="Online Bid Submission End Date and Time"><Input type="datetime-local" value={f.onlineBidEndDate} onChange={e=>set("onlineBidEndDate",e.target.value)}/></FG>
+          <FG label="Physical Documents Submission End Date & Time">
+            <div style={{display:"flex",gap:8,alignItems:"center"}}>
+              <Input type="datetime-local" value={f.physicalDocsEndDate} onChange={e=>set("physicalDocsEndDate",e.target.value)} disabled={!f.physicalDocsApplicable} style={{flex:1}}/>
+              <label style={{display:"flex",alignItems:"center",gap:4,fontSize:11,whiteSpace:"nowrap"}}>
+                <input type="checkbox" checked={!f.physicalDocsApplicable} onChange={e=>set("physicalDocsApplicable",!e.target.checked)}/> N/A
+              </label>
+            </div>
+          </FG>
+          <FG label="Pre-Bid Meeting Date & Time"><Input type="datetime-local" value={f.preBidMeetingDate} onChange={e=>set("preBidMeetingDate",e.target.value)}/></FG>
+          <FG label="Pre-Bid Meeting Venue"><Select value={f.preBidMeetingVenue} onChange={e=>set("preBidMeetingVenue",e.target.value)}><option value="">Select...</option><option value="Online">Online</option><option value="Physical">Physical</option></Select></FG>
+        </div>
+      </Card>
+
+      {/* 4. FINANCIAL CHARTER — vertical, dynamic milestones */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:4,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>4. Financial Charter</div>
+        <div style={{fontSize:10,color:"#9ca3af",marginBottom:12}}>Visible and editable throughout all stages of the workflow</div>
+
+        <div style={{marginBottom:14,display:"flex",gap:16,alignItems:"center"}}>
+          <Label>Milestone Basis</Label>
+          <label style={{display:"flex",alignItems:"center",gap:5,fontSize:12}}><input type="radio" checked={feeBasis==="project_fee"} onChange={()=>setFeeBasis("project_fee")}/> Project Fee</label>
+          <label style={{display:"flex",alignItems:"center",gap:5,fontSize:12}}><input type="radio" checked={feeBasis==="total_project_fee"} onChange={()=>setFeeBasis("total_project_fee")}/> Total Project Fee</label>
+        </div>
+
+        <div style={{fontSize:12,fontWeight:700,color:"#374151",marginBottom:8}}>Cash Inflow — Milestones</div>
+        <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:10}}>
+          {milestones.map((m,i)=><div key={m.id} style={{display:"grid",gridTemplateColumns:"2fr 0.7fr 1fr 1fr auto",gap:8,alignItems:"end",background:"#f8fbff",padding:10,borderRadius:8,border:`1px solid ${C.border}`}}>
+            <div><Label>Milestone Label</Label><Input value={m.label} onChange={e=>updateMilestone(m.id,"label",e.target.value)}/></div>
+            <div><Label>%</Label><Input type="number" value={m.pct} onChange={e=>updateMilestone(m.id,"pct",e.target.value)}/></div>
+            <div><Label>Amount (₹)</Label><Input type="number" value={m.amount} onChange={e=>updateMilestone(m.id,"amount",e.target.value)}/></div>
+            <div><Label>Expected Date</Label><Input type="date" value={m.date} onChange={e=>updateMilestone(m.id,"date",e.target.value)}/></div>
+            <button type="button" onClick={()=>removeMilestone(m.id)} style={{background:"none",border:"none",color:C.red,cursor:"pointer",fontSize:16,padding:"4px 8px"}}>×</button>
           </div>)}
-          {"5. Eligibility & CBOD Remarks"===title&&<div style={{gridColumn:"1/-1",display:"flex",alignItems:"center",gap:8}}>
+        </div>
+        <BtnSec type="button" onClick={addMilestone} small>+ Add Milestone</BtnSec>
+        <div style={{textAlign:"right",fontSize:12,fontWeight:700,color:C.green,marginTop:8}}>Total Inflow: {fmtL(totalInflow)}</div>
+
+        <div style={{borderTop:`1px solid ${C.border}`,marginTop:16,paddingTop:14}}>
+          <div style={{fontSize:12,fontWeight:700,color:"#374151",marginBottom:8}}>Cash Outflow — Expense Drill-down</div>
+          <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:10}}>
+            {outflowRows.map(r=><div key={r.id} style={{display:"grid",gridTemplateColumns:"0.9fr 1.6fr 1fr auto",gap:8,alignItems:"end",background:"#fafafa",padding:10,borderRadius:8,border:`1px solid ${C.border}`}}>
+              <div><Label>Group</Label><Select value={r.group} onChange={e=>updateOutflowRow(r.id,"group",e.target.value)}>{EXPENSE_GROUPS.map(g=><option key={g} value={g}>{g}</option>)}</Select></div>
+              <div><Label>Expense Head</Label><Select value={r.code} onChange={e=>updateOutflowRow(r.id,"code",e.target.value)}>
+                <option value="">Select expense head...</option>
+                {QCI_EXPENSE_CATEGORIES.filter(c=>c.group===r.group).map(c=><option key={c.code} value={c.code}>{c.name}</option>)}
+              </Select></div>
+              <div><Label>Amount (₹)</Label><Input type="number" value={r.amount} onChange={e=>updateOutflowRow(r.id,"amount",e.target.value)}/></div>
+              <button type="button" onClick={()=>removeOutflowRow(r.id)} style={{background:"none",border:"none",color:C.red,cursor:"pointer",fontSize:16,padding:"4px 8px"}}>×</button>
+            </div>)}
+          </div>
+          <BtnSec type="button" onClick={addOutflowRow} small>+ Add Expense Line</BtnSec>
+        </div>
+
+        <div style={{marginTop:16,padding:"14px",background:gm.marginPct<7&&totalInflow>0?"#fef2f2":"#f0fdf4",borderRadius:10,border:`1px solid ${gm.marginPct<7&&totalInflow>0?"#fca5a5":"#bbf7d0"}`}}>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:12,marginBottom:6}}><span style={{color:"#6b7280"}}>Total Outflow</span><span style={{fontWeight:700}}>{fmtL(gm.totalOutflow)}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:12,marginBottom:6,alignItems:"center"}}>
+            <span style={{color:"#6b7280"}}>Functional Load — auto-calculated</span>
+            <span style={{display:"flex",gap:6,alignItems:"center"}}>
+              <Input type="number" value={functionalLoadPct} onChange={e=>setFunctionalLoadPct(e.target.value)} style={{width:60,padding:"4px 6px"}}/>%
+              <span style={{fontWeight:700,color:C.orange}}>= {fmtL(gm.funcLoad)}</span>
+            </span>
+          </div>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:13,fontWeight:700,marginBottom:4}}><span>Total Cost</span><span>{fmtL(gm.totalCost)}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:13,fontWeight:700,marginBottom:4}}><span>Gross Margin (₹) — auto-calculated</span><span style={{color:gm.margin>=0?C.green:C.red}}>{fmtL(gm.margin)}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:16,fontWeight:800}}><span>Gross Margin %</span><span style={{color:gm.marginPct<7?C.red:C.green}}>{gm.marginPct.toFixed(1)}% {gm.marginPct<7&&totalInflow>0?"⚠️":"✅"}</span></div>
+        </div>
+
+        {showLowMarginField&&<div style={{marginTop:12}}>
+          <Label required>⚠️ Reason for Lower Margin (mandatory — GM below 7%)</Label>
+          <Textarea value={lowMarginReason} onChange={e=>setLowMarginReason(e.target.value)} placeholder="Explain why this bid is being pursued despite low margin..." rows={3} style={{borderColor:C.red}}/>
+        </div>}
+      </Card>
+
+      {/* 5. OBJECTIVE & CBOD REMARKS */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>5. Objective & CBOD Remarks</div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
+          <FG label="Objective of RFP" col="1/-1"><Textarea value={f.objectiveOfRFP} onChange={e=>set("objectiveOfRFP",e.target.value)} placeholder="e.g. 5 years experience in health sector, ISO certified..."/></FG>
+          <FG label="CBOD Remarks" col="1/-1"><Textarea value={f.cbodRemarks} onChange={e=>set("cbodRemarks",e.target.value)} placeholder="Go/No-Go rationale, strategic notes..."/></FG>
+          <div style={{gridColumn:"1/-1",display:"flex",alignItems:"center",gap:8}}>
             <input type="checkbox" id="cons" checked={f.consortiumAllowed} onChange={e=>set("consortiumAllowed",e.target.checked)}/>
             <label htmlFor="cons" style={{fontSize:12}}>Consortium bid allowed</label>
             {f.consortiumAllowed&&<Input value={f.consortiumLead} onChange={e=>set("consortiumLead",e.target.value)} placeholder="Lead entity" style={{width:180}}/>}
-          </div>}
+          </div>
         </div>
-      </Card>)}
+      </Card>
 
+      {/* 6. REMARKS */}
       <Card style={{marginBottom:14}}>
-        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>6. Attachments</div>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>6. Remarks</div>
+        <Textarea value={f.remarks} onChange={e=>set("remarks",e.target.value)} placeholder="Any additional remarks..." rows={3}/>
+      </Card>
+
+      {/* 7. ATTACHMENTS */}
+      <Card style={{marginBottom:14}}>
+        <div style={{fontSize:12,fontWeight:700,color:C.blue,marginBottom:12,display:"flex",alignItems:"center",gap:8}}><div style={{width:3,height:14,background:C.blue,borderRadius:2}}/>7. Attachments</div>
         <label style={{cursor:"pointer",display:"inline-block",marginBottom:12}}><Btn onClick={undefined} small>📎 Add Files</Btn><input type="file" multiple style={{display:"none"}} onChange={handleFiles}/></label>
         {attPreviews.map((a,i)=><div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"6px 10px",borderRadius:6,border:`1px solid ${C.border}`,marginBottom:4,fontSize:12}}>
           <span>📄</span><span style={{flex:1}}>{a.name}</span><span style={{color:"#9ca3af"}}>{a.size}</span>
@@ -1185,7 +1569,7 @@ function NewTenderFull({tenders,setTenders,navTo,showToast,user,addNotif}) {
 function NominationsPage({nominations,navTo,user}) {
   const [search,setSearch]=useState("");
   const filtered=nominations.filter(n=>!search||n.title.toLowerCase().includes(search.toLowerCase())||n.ref.includes(search));
-  return <div style={{maxWidth:1100}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16,flexWrap:"wrap",gap:10}}>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Nomination Projects</h1>
       {["pl","admin"].includes(user.role)&&<Btn onClick={()=>navTo("new-nom")} c="#7c3aed">+ New Nomination</Btn>}
@@ -1232,7 +1616,7 @@ function NomDetail({item,nominations,setNominations,navTo,user,showToast,addNoti
   const funcLoad=totalDirect*(n.functionalLoad||10)/100;
   const grossMargin=totalInflow-totalDirect-funcLoad;
   const profitPct=totalInflow>0?(grossMargin/totalInflow*100):0;
-  const lowProfit=profitPct<4&&totalInflow>0;
+  const lowProfit=profitPct<7&&totalInflow>0;
 
   const updateN=(changes,auditEntry)=>setNominations(prev=>prev.map(x=>x.id===n.id?{...x,...changes,auditLog:[...(x.auditLog||[]),auditEntry]}:x));
 
@@ -1277,13 +1661,14 @@ function NomDetail({item,nominations,setNominations,navTo,user,showToast,addNoti
     showToast(`Uploaded ${files.length} file(s)`); e.target.value="";
   };
 
-  const TABS=["charter","financials","actual","documents","comments","audit"];
+  const TABS=["charter","financials","actual","remarks","documents","comments","audit"];
 
-  return <div style={{maxWidth:1000}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:14}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <div style={{fontSize:12,color:"#9ca3af"}}>Nomination Project Detail</div>
     </div>
+    <StageGateBar status={n.status} type="nomination"/>
     <Card style={{marginBottom:14}}>
       <div style={{display:"flex",gap:8,flexWrap:"wrap",alignItems:"center",marginBottom:8}}>
         <span style={{fontSize:10,padding:"2px 8px",borderRadius:999,background:"#f5f3ff",color:"#7c3aed",fontWeight:600}}>Nomination</span>
@@ -1293,7 +1678,7 @@ function NomDetail({item,nominations,setNominations,navTo,user,showToast,addNoti
       </div>
       <h2 style={{margin:"0 0 4px",fontSize:17,fontWeight:700,color:C.dark}}>{n.title}</h2>
       <div style={{fontSize:12,color:"#6b7280"}}>{n.ministry} · {n.div}</div>
-      {lowProfit&&<div style={{marginTop:8,padding:"8px 12px",background:"#fef2f2",borderRadius:8,fontSize:12,fontWeight:700,color:C.red}}>⚠️ Profit Margin ({profitPct.toFixed(1)}%) is below 4% threshold!</div>}
+      {lowProfit&&<div style={{marginTop:8,padding:"8px 12px",background:"#fef2f2",borderRadius:8,fontSize:12,fontWeight:700,color:C.red}}>⚠️ Profit Margin ({profitPct.toFixed(1)}%) is below 7% threshold!</div>}
     </Card>
 
     {canApprove&&<div style={{background:"#fffbeb",border:"1px solid #fcd34d",borderRadius:12,padding:"12px 16px",marginBottom:14,display:"flex",alignItems:"center",justifyContent:"space-between",gap:10,flexWrap:"wrap"}}>
@@ -1357,9 +1742,13 @@ function NomDetail({item,nominations,setNominations,navTo,user,showToast,addNoti
           <div style={{display:"flex",justifyContent:"space-between",fontSize:14,fontWeight:800}}><span>Profit Margin %</span><span style={{color:lowProfit?C.red:C.green}}>{profitPct.toFixed(1)}% {lowProfit?"⚠️":""}</span></div>
         </div>
         <div style={{marginTop:10,padding:"10px 12px",background:lowProfit?"#fef2f2":"#f0fdf4",borderRadius:8,fontSize:11,color:lowProfit?C.red:C.green,fontWeight:600}}>
-          {lowProfit?"⚠️ Profit Margin below 4% threshold — needs management review!":"✅ Healthy profit margin"}
+          {lowProfit?"⚠️ Profit Margin below 7% threshold — needs management review!":"✅ Healthy profit margin"}
         </div>
         <div style={{marginTop:8,fontSize:11,color:"#6b7280"}}><strong>GM Remarks:</strong> {n.marginRemarks||"—"}</div>
+        {n.lowMarginReason&&<div style={{marginTop:10,padding:"10px 12px",background:"#fef2f2",borderRadius:8}}>
+          <div style={{fontSize:11,fontWeight:700,color:C.red,marginBottom:2}}>⚠️ Reason for Lower Margin</div>
+          <div style={{fontSize:12,color:"#374151"}}>{n.lowMarginReason}</div>
+        </div>}
       </Card>
     </div>}
 
@@ -1387,6 +1776,12 @@ function NomDetail({item,nominations,setNominations,navTo,user,showToast,addNoti
         </table>
       </div>
     </Card>}
+
+    {tab==="remarks"&&<Card>
+      <div style={{fontSize:12,fontWeight:700,color:C.dark,marginBottom:12}}>Remarks</div>
+      <div style={{fontSize:12,color:"#374151",whiteSpace:"pre-wrap"}}>{n.remarks||n.marginRemarks||"No remarks added yet."}</div>
+    </Card>}
+
 
     {tab==="documents"&&<Card>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
@@ -1447,6 +1842,7 @@ function NewNominationFull({nominations,setNominations,navTo,showToast,user,addN
   });
   const set=(k,v)=>setF(p=>({...p,[k]:v}));
   const [attPreviews,setAttPreviews]=useState([]);
+  const [lowMarginReason,setLowMarginReason]=useState("");
 
   if(!["pl","admin"].includes(user.role)) return <Card style={{textAlign:"center",padding:40}}><div style={{fontSize:28,marginBottom:8}}>🔒</div><div>Only Project Leads can create nominations.</div></Card>;
 
@@ -1455,7 +1851,7 @@ function NewNominationFull({nominations,setNominations,navTo,showToast,user,addN
   const funcLoad=totalDirect*(parseFloat(f.functionalLoad)||10)/100;
   const grossMargin=totalInflow-totalDirect-funcLoad;
   const profitPct=totalInflow>0?(grossMargin/totalInflow*100):0;
-  const lowProfit=profitPct<4&&totalInflow>0;
+  const lowProfit=profitPct<7&&totalInflow>0;
 
   const handleFiles=(e)=>{
     const files=[...e.target.files];
@@ -1466,10 +1862,12 @@ function NewNominationFull({nominations,setNominations,navTo,showToast,user,addN
   const submit=(e)=>{
     e.preventDefault();
     if(!f.title||!f.ministry||!f.div){showToast("Fill required fields","error");return;}
+    if(lowProfit&&!lowMarginReason.trim()){showToast("Reason for Lower Margin is mandatory when GM < 7%","error");return;}
     const ref=`NOM-${new Date().getFullYear()}-${String(nominations.length+1).padStart(3,"0")}`;
     const newN={
       ...f,id:genId(),ref,type:"nomination",track:"nomination",status:"pending_core",
       value:totalInflow||parseFloat(f.proposedCost)||0,emd:0,emdStatus:"not_required",
+      lowMarginReason:lowProfit?lowMarginReason:"",
       createdBy:user.email,createdAt:now(),
       broadDetails:[{ministry:f.ministry,spocClient:"",spocQci:user.name,remarks:"Direct nomination"}],
       financialsActual:[],
@@ -1483,7 +1881,7 @@ function NewNominationFull({nominations,setNominations,navTo,showToast,user,addN
     navTo("nominations");
   };
 
-  return <div style={{maxWidth:840}}>
+  return <div style={{maxWidth:1150}}>
     <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:14}}>
       <button onClick={()=>navTo("nominations")} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>New Nomination Project</h1>
@@ -1533,8 +1931,12 @@ function NewNominationFull({nominations,setNominations,navTo,showToast,user,addN
           <div style={{display:"flex",justifyContent:"space-between",fontSize:12,marginBottom:6}}><span style={{color:"#6b7280"}}>Total Inflow</span><span style={{fontWeight:700,color:C.green}}>{fmtL(totalInflow)}</span></div>
           <div style={{display:"flex",justifyContent:"space-between",fontSize:12,marginBottom:6}}><span style={{color:"#6b7280"}}>Total Outflow + Func Load</span><span style={{fontWeight:700,color:C.red}}>{fmtL(totalDirect+funcLoad)}</span></div>
           <div style={{display:"flex",justifyContent:"space-between",fontSize:13,fontWeight:700,marginBottom:4}}><span>Gross Margin</span><span style={{color:grossMargin>=0?C.green:C.red}}>{fmtL(grossMargin)}</span></div>
-          <div style={{display:"flex",justifyContent:"space-between",fontSize:15,fontWeight:800}}><span>Profit Margin %</span><span style={{color:lowProfit?C.red:C.green}}>{profitPct.toFixed(1)}% {lowProfit?"⚠️ BELOW 4%!":""}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",fontSize:15,fontWeight:800}}><span>Profit Margin %</span><span style={{color:lowProfit?C.red:C.green}}>{profitPct.toFixed(1)}% {lowProfit?"⚠️ BELOW 7%!":""}</span></div>
         </div>
+        {lowProfit&&<div style={{marginTop:12}}>
+          <Label required>⚠️ Reason for Lower Margin (mandatory — GM below 7%)</Label>
+          <Textarea value={lowMarginReason} onChange={e=>setLowMarginReason(e.target.value)} placeholder="Explain why this nomination is being pursued despite low margin..." rows={3} style={{borderColor:C.red}}/>
+        </div>}
       </Card>
 
       <Card style={{marginBottom:14}}>
@@ -1571,7 +1973,7 @@ function ApprovalsPage({myPending,allItems,tenders,setTenders,nominations,setNom
   const mySentBack=allItems.filter(i=>i.status==="sent_back"||(i.auditLog||[]).some(a=>a.action==="SEND_BACK"&&a.by===user.name));
   const list=tab==="pending"?myPending:tab==="approved"?myApproved:tab==="sent_back"?mySentBack:myCancelled;
 
-  return <div style={{maxWidth:950}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{marginBottom:16}}>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Approvals</h1>
       {myPending.length>0&&<div style={{marginTop:8,padding:"8px 14px",background:"#fffbeb",border:"1px solid #fcd34d",borderRadius:8,fontSize:12,fontWeight:600,color:"#92400e",display:"inline-block"}}>⚡ {myPending.length} item{myPending.length>1?"s":""} awaiting your action</div>}
@@ -1625,7 +2027,7 @@ function EMDPage({tenders,setTenders,user,showToast,goBack}) {
   const emdTenders=tenders.filter(t=>t.emd>0);
   const totals={pending:emdTenders.filter(t=>t.emdStatus==="pending").reduce((s,t)=>s+t.emd,0),submitted:emdTenders.filter(t=>t.emdStatus==="submitted").reduce((s,t)=>s+t.emd,0),forfeited:emdTenders.filter(t=>t.emdStatus==="forfeited").reduce((s,t)=>s+t.emd,0)};
   const SC={submitted:{c:C.blue,bg:"#e0f2fe"},pending:{c:C.orange,bg:"#fff7ed"},refunded:{c:C.green,bg:"#f0fdf4"},forfeited:{c:C.red,bg:"#fef2f2"},not_required:{c:"#6b7280",bg:"#f9fafb"}};
-  return <div style={{maxWidth:1000}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>EMD Tracker</h1>
@@ -1672,7 +2074,7 @@ function KnowledgePage({allItems,goBack}) {
   const records=allItems.flatMap(item=>(item.auditLog||[]).filter(e=>e.action!=="COMMENT"&&e.action!=="CREATED").map(e=>({...e,itemRef:item.ref,itemTitle:item.title,itemType:item.type,div:item.div})));
   const [filter,setFilter]=useState("all");
   const shown=filter==="all"?records:records.filter(r=>r.action.toLowerCase().includes(filter));
-  return <div style={{maxWidth:900}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <div><h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Knowledge Repository</h1><div style={{fontSize:12,color:"#6b7280",marginTop:2}}>Full approval/rejection/send-back history</div></div>
@@ -1740,7 +2142,7 @@ function ReportsPage({tenders,nominations,allItems,goBack}) {
     {stage:"Pending Accounts",count:allItems.filter(i=>i.status==="pending_accounts").length,color:C.blue},
   ];
 
-  return <div style={{maxWidth:1100}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Reports & Analytics</h1>
@@ -1840,7 +2242,7 @@ function ReportsPage({tenders,nominations,allItems,goBack}) {
 // ─── AUDIT PAGE ───────────────────────────────────────────────
 function AuditPage({allItems,goBack}) {
   const all=allItems.flatMap(item=>(item.auditLog||[]).map(e=>({...e,itemRef:item.ref,itemTitle:item.title,itemType:item.type,div:item.div}))).sort((a,b)=>new Date(b.at)-new Date(a.at));
-  return <div style={{maxWidth:1000}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
       <div><h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Full System Audit Trail</h1><div style={{fontSize:12,color:"#6b7280",marginTop:2}}>Every action with actor, role, and timestamp</div></div>
@@ -1876,7 +2278,7 @@ function UsersPage({users,setUsers,user,showToast}) {
   if(user.role!=="admin") return <Card style={{textAlign:"center",padding:60}}><div style={{fontSize:32,marginBottom:12}}>🔒</div><div style={{color:"#9ca3af"}}>Admin only.</div></Card>;
   const RC={sg:"#b45309",cfo:"#dc2626",cbod_team:"#0077B6",div_head:"#0d9488",pl:"#7c3aed",core_team:"#6b7280",accounts:"#d97706",admin:"#1f2937"};
   const unverified=users.filter(u=>!u.verified);
-  return <div style={{maxWidth:900}}>
+  return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
       <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Users & Roles</h1>
       <Btn onClick={()=>setShowForm(true)}>+ Add User</Btn>
@@ -1957,7 +2359,7 @@ function ProfilePage({user,setCU,users,setUsers,showToast}) {
     setCU(updated); setShowPw(false); setPwf({current:"",newPw:"",confirm:""}); showToast("Password changed successfully");
   };
 
-  return <div style={{maxWidth:600}}>
+  return <div style={{maxWidth:760}}>
     <h1 style={{margin:"0 0 20px",fontSize:20,fontWeight:700,color:C.dark}}>My Profile</h1>
     <Card style={{marginBottom:14}}>
       <div style={{display:"flex",alignItems:"center",gap:16,marginBottom:20}}>
