@@ -74,7 +74,7 @@ const SEED_USERS = [
 const SEED_TENDERS = [
   { id:"t1", ref:"BID-2024-001", type:"tender", title:"Digital Health Infrastructure Assessment",
     ministry:"Ministry of Health & Family Welfare", div:"NABH", status:"pending_cfo", priority:"high",
-    emd:170000, emdStatus:"submitted", bidMode:"Bank Guarantee", ddDetails:"BG/SBI/2024/001234, SBI, 15-Mar-2024",
+    emd:170000, emdStatus:"submitted", bidMode:"Bank Guarantee", emdCode:"EMD-24-001", emdProcessStage:"Submitted", emdDueDate:"2024-03-15", ddDetails:"BG/SBI/2024/001234, SBI, 15-Mar-2024",
     dl:"2024-03-20", value:8500000, websiteUrl:"https://cppp.gov.in/bidNo/MOH001",
     suggestedPL:"pl1@qci.org", evalType:"QCBS", procType:"Open Tender",
     cbodRemarks:"Strategic fit confirmed. Go decision. Health sector priority.",
@@ -92,7 +92,7 @@ const SEED_TENDERS = [
   },
   { id:"t2", ref:"BID-2024-002", type:"tender", title:"Smart Cities Mission Phase III PMC",
     ministry:"Ministry of Housing & Urban Affairs", div:"PPID", status:"approved", priority:"critical",
-    emd:350000, emdStatus:"submitted", bidMode:"Online Payment (GeM)", ddDetails:"GEM/2024/EMD/789, RTGS",
+    emd:350000, emdStatus:"submitted", bidMode:"Online Payment (GeM)", emdCode:"EMD-24-002", emdProcessStage:"Submitted", emdDueDate:"2024-02-25", ddDetails:"GEM/2024/EMD/789, RTGS",
     dl:"2024-02-28", value:15000000, websiteUrl:"https://gem.gov.in/bid/SC2024",
     suggestedPL:"pl2@qci.org", evalType:"QCBS", procType:"GEM Portal",
     cbodRemarks:"Critical bid. High value. All hands on deck.",
@@ -114,7 +114,7 @@ const SEED_TENDERS = [
   },
   { id:"t3", ref:"BID-2024-003", type:"tender", title:"Environmental Impact Assessment for NH Projects",
     ministry:"Ministry of Road Transport & Highways", div:"NABET", status:"cancelled", priority:"medium",
-    emd:136000, emdStatus:"forfeited", bidMode:"Demand Draft (DD)", ddDetails:"DD/PNB/2024/00456",
+    emd:136000, emdStatus:"forfeited", bidMode:"Demand Draft (DD)", ddDetails:"DD/PNB/2024/00456", emdCode:"EMD-24-003", emdProcessStage:"Refunded", emdDueDate:"2024-01-15",
     dl:"2024-01-20", value:6800000, websiteUrl:"https://nhai.gov.in/tender/env2024",
     suggestedPL:"pl1@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
     cbodRemarks:"Lost to EPC firm. Decision to cancel.", accountsRemarks:"EMD forfeited as per contract.",
@@ -129,7 +129,7 @@ const SEED_TENDERS = [
   },
   { id:"t4", ref:"BID-2024-004", type:"tender", title:"Skill Development Programmes Third-Party Audit",
     ministry:"Ministry of Skill Development & Entrepreneurship", div:"NABET", status:"pending_divhead", priority:"medium",
-    emd:64000, emdStatus:"pending", bidMode:"Demand Draft (DD)", ddDetails:"",
+    emd:64000, emdStatus:"pending", bidMode:"Demand Draft (DD)", ddDetails:"", emdCode:"EMD-24-004", emdProcessStage:"Requested", emdDueDate:"2024-04-05",
     dl:"2024-04-10", value:3200000, websiteUrl:"https://nsdc.gov.in/tender/audit2024",
     suggestedPL:"pl1@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
     cbodRemarks:"NSDC repeat client. Strong positioning.",
@@ -143,7 +143,7 @@ const SEED_TENDERS = [
   },
   { id:"t5", ref:"BID-2023-015", type:"tender", title:"FSSAI Food Safety Surveillance Support",
     ministry:"Ministry of Health & Family Welfare", div:"NABH", status:"won", priority:"high",
-    emd:200000, emdStatus:"refunded", bidMode:"Bank Guarantee", ddDetails:"BG/HDFC/2023/007890",
+    emd:200000, emdStatus:"refunded", bidMode:"Bank Guarantee", ddDetails:"BG/HDFC/2023/007890", emdCode:"EMD-23-001", emdProcessStage:"Refunded", emdDueDate:"2023-09-10",
     dl:"2023-09-15", value:12000000, websiteUrl:"https://fssai.gov.in/bid/surv2023",
     suggestedPL:"pl1@qci.org", evalType:"QCBS", procType:"Open Tender",
     cbodRemarks:"Won FSSAI contract. QCBS 80:20.", accountsRemarks:"EMD refunded post-award.",
@@ -157,7 +157,7 @@ const SEED_TENDERS = [
   },
   { id:"t6", ref:"BID-2024-005", type:"tender", title:"State Finance Commission Secretariat Support",
     ministry:"Finance Department, Rajasthan", div:"SPD", status:"pending_sg", priority:"medium",
-    emd:180000, emdStatus:"submitted", bidMode:"NEFT/RTGS",ddDetails:"NEFT/SBI/2024/REF99123",
+    emd:180000, emdStatus:"submitted", bidMode:"NEFT/RTGS", ddDetails:"NEFT/SBI/2024/REF99123", emdCode:"EMD-24-005", emdProcessStage:"Under Finance Review", emdDueDate:"2024-04-25",
     dl:"2024-05-01", value:5500000, websiteUrl:"https://rajasthan.gov.in/sfc2024",
     suggestedPL:"pl2@qci.org", evalType:"Negotiated", procType:"Nomination",
     cbodRemarks:"State finance commission. Strategic relationship.", accountsRemarks:"NEFT confirmed.",
@@ -171,7 +171,7 @@ const SEED_TENDERS = [
   },
   { id:"t7", ref:"BID-2024-006", type:"tender", title:"NABL Laboratory Accreditation Outreach Programme",
     ministry:"Department of Science & Technology", div:"NABL", status:"pending_accounts", priority:"high",
-    emd:95000, emdStatus:"submitted", bidMode:"Bank Guarantee", ddDetails:"BG/AXIS/2024/00982",
+    emd:95000, emdStatus:"submitted", bidMode:"Bank Guarantee", ddDetails:"BG/AXIS/2024/00982", emdCode:"EMD-24-006", emdProcessStage:"Submitted", emdDueDate:"2024-04-20",
     dl:"2024-04-25", value:4200000, websiteUrl:"https://dst.gov.in/nabl-outreach",
     suggestedPL:"pl3@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
     cbodRemarks:"Good strategic fit with NABL mandate.", accountsRemarks:"BG verification in progress, DD pending issue.",
@@ -199,7 +199,7 @@ const SEED_TENDERS = [
   },
   { id:"t9", ref:"BID-2024-008", type:"tender", title:"NBQP National Quality Awards Secretariat Support",
     ministry:"Department for Promotion of Industry & Internal Trade", div:"NBQP", status:"cancelled", priority:"medium",
-    emd:110000, emdStatus:"forfeited", bidMode:"Demand Draft (DD)", ddDetails:"DD/HDFC/2024/00321",
+    emd:110000, emdStatus:"forfeited", bidMode:"Demand Draft (DD)", ddDetails:"DD/HDFC/2024/00321", emdCode:"EMD-24-007", emdProcessStage:"Refunded", emdDueDate:"2024-02-20",
     dl:"2024-02-28", value:3600000, websiteUrl:"https://dpiit.gov.in/nqa2024",
     suggestedPL:"pl2@qci.org", evalType:"L1 (Lowest Bidder)", procType:"Open Tender",
     cbodRemarks:"Withdrew after technical disqualification on eligibility criteria.", accountsRemarks:"EMD forfeited.",
@@ -537,8 +537,8 @@ const NAV_ITEMS=[
   {id:"tenders",   label:"Tender Bids",       roles:["cbod_team","div_head","sg","cfo","accounts","admin","pl"]},
   {id:"nominations",label:"Nomination Projects",roles:["pl","div_head","sg","cfo","core_team","admin"]},
   {id:"approvals", label:"Approvals",         roles:["all"],badge:true},
-  {id:"emd",       label:"EMD Tracker",       roles:["cbod_team","pl","accounts","admin"]},
-  {id:"knowledge", label:"Knowledge Base",    roles:["all"]},
+  {id:"emd",       label:"EMD, Processing Fee & Tender Fee",roles:["cbod_team","pl","accounts","admin"]},
+  {id:"knowledge", label:"Approval & Action History Repository",roles:["all"]},
   {id:"reports",   label:"Reports & Analytics",roles:["sg","cfo","div_head","admin","cbod_team"]},
   {id:"audit",     label:"Audit Trail",       roles:["sg","admin"]},
   {id:"users",     label:"Users & Roles",     roles:["admin"]},
@@ -674,7 +674,7 @@ export default function QCIPortal() {
           {page==="new-nom"       && <NewNominationFull nominations={nominations} setNominations={setNominations} navTo={navTo} showToast={showToast} user={currentUser} addNotif={addNotif}/>}
           {page==="approvals"     && <ApprovalsPage myPending={myPending} allItems={allItems} tenders={tenders} setTenders={setTenders} nominations={nominations} setNominations={setNominations} navTo={navTo} user={currentUser} showToast={showToast} addNotif={addNotif} users={users}/>}
           {page==="emd"           && <EMDPage tenders={tenders} setTenders={setTenders} user={currentUser} showToast={showToast} goBack={goBack}/>}
-          {page==="knowledge"     && <KnowledgePage allItems={allItems} goBack={goBack}/>}
+          {page==="knowledge"     && <KnowledgePage allItems={allItems} navTo={navTo} goBack={goBack}/>}
           {page==="reports"       && <ReportsPage tenders={tenders} nominations={nominations} allItems={allItems} goBack={goBack}/>}
           {page==="audit"         && <AuditPage allItems={allItems} goBack={goBack}/>}
           {page==="users"         && <UsersPage users={users} setUsers={setUsers} user={currentUser} showToast={showToast}/>}
@@ -1011,11 +1011,12 @@ function TendersPage({tenders,navTo,user}) {
     <Card style={{padding:0,overflow:"hidden"}}>
       <div style={{overflowX:"auto"}}>
         <table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
-          <thead><tr style={{background:"#f8fbff",borderBottom:`1px solid ${C.border}`}}>{["Ref","Title","Division","EMD","Status","Priority","Value",""].map(h=><th key={h} style={{textAlign:"left",padding:"10px 14px",fontSize:11,fontWeight:700,color:"#6b7280"}}>{h}</th>)}</tr></thead>
+          <thead><tr style={{background:"#f8fbff",borderBottom:`1px solid ${C.border}`}}>{["Ref","EMD Code","Title","Division","EMD","Status","Priority","Value",""].map(h=><th key={h} style={{textAlign:"left",padding:"10px 14px",fontSize:11,fontWeight:700,color:"#6b7280"}}>{h}</th>)}</tr></thead>
           <tbody>
-            {filtered.length===0&&<tr><td colSpan={8} style={{textAlign:"center",padding:32,color:"#9ca3af"}}>No tender bids found</td></tr>}
+            {filtered.length===0&&<tr><td colSpan={9} style={{textAlign:"center",padding:32,color:"#9ca3af"}}>No tender bids found</td></tr>}
             {filtered.map(t=><tr key={t.id} className="hover-row" onClick={()=>navTo("tender-detail",t)} style={{borderBottom:`1px solid #f3f4f6`}}>
               <td style={{padding:"10px 14px",fontFamily:"monospace",fontSize:11,color:"#6b7280"}}>{t.ref}</td>
+              <td style={{padding:"10px 14px",fontFamily:"monospace",fontSize:11,color:C.blue,fontWeight:600}}>{t.emdCode||"—"}</td>
               <td style={{padding:"10px 14px",fontWeight:600,maxWidth:200,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{t.title}</td>
               <td style={{padding:"10px 14px",color:"#6b7280"}}>{t.div||"—"}</td>
               <td style={{padding:"10px 14px",fontWeight:600}}>{fmtL(t.emd)}</td>
@@ -2024,79 +2025,301 @@ function EMDPage({tenders,setTenders,user,showToast,goBack}) {
   const canUpdate=["cbod_team","pl","accounts","admin"].includes(user.role);
   const [editing,setEditing]=useState(null);
   const [ef,setEf]=useState({});
+  const [activeTab,setActiveTab]=useState("tracker"); // tracker | reconciliation
+  const [reconSearch,setReconSearch]=useState("");
+
   const emdTenders=tenders.filter(t=>t.emd>0);
-  const totals={pending:emdTenders.filter(t=>t.emdStatus==="pending").reduce((s,t)=>s+t.emd,0),submitted:emdTenders.filter(t=>t.emdStatus==="submitted").reduce((s,t)=>s+t.emd,0),forfeited:emdTenders.filter(t=>t.emdStatus==="forfeited").reduce((s,t)=>s+t.emd,0)};
+  const totals={
+    pending:  emdTenders.filter(t=>t.emdStatus==="pending").reduce((s,t)=>s+t.emd,0),
+    submitted:emdTenders.filter(t=>t.emdStatus==="submitted").reduce((s,t)=>s+t.emd,0),
+    refunded: emdTenders.filter(t=>t.emdStatus==="refunded").reduce((s,t)=>s+t.emd,0),
+    forfeited:emdTenders.filter(t=>t.emdStatus==="forfeited").reduce((s,t)=>s+t.emd,0),
+  };
   const SC={submitted:{c:C.blue,bg:"#e0f2fe"},pending:{c:C.orange,bg:"#fff7ed"},refunded:{c:C.green,bg:"#f0fdf4"},forfeited:{c:C.red,bg:"#fef2f2"},not_required:{c:"#6b7280",bg:"#f9fafb"}};
+
+  const EMD_PROCESS_STAGES=["Requested","Under Finance Review","Submitted","Refund Due","Refunded"];
+  const RECON_STATUSES=["CBOD to Retrieve","Pending for Long Time","PBG Payment","Refund in Process","Tender Under Evaluation","Awarded Tenders","Joint Follow-up"];
+
+  const reconFiltered=emdTenders.filter(t=>!reconSearch||t.ref.toLowerCase().includes(reconSearch.toLowerCase())||t.title.toLowerCase().includes(reconSearch.toLowerCase())||(t.emdCode||"").toLowerCase().includes(reconSearch.toLowerCase()));
+
   return <div style={{maxWidth:"100%"}}>
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
-      <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>EMD Tracker</h1>
+      <div>
+        <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>EMD, Processing Fee & Tender Fee</h1>
+        <div style={{fontSize:11,color:"#6b7280",marginTop:2}}>Tender Payment Tracker — CBOD & Accounts</div>
+      </div>
     </div>
-    <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12,marginBottom:16}}>
-      {[["Pending",fmtL(totals.pending),C.orange],["Submitted",fmtL(totals.submitted),C.blue],["Forfeited",fmtL(totals.forfeited),C.red]].map(([l,v,c])=><div key={l} style={{background:"white",border:`1px solid ${C.border}`,borderRadius:10,padding:14}}><div style={{fontSize:18,fontWeight:700,color:c}}>{v}</div><div style={{fontSize:11,color:"#6b7280",marginTop:2}}>{l}</div></div>)}
+
+    {/* KPI Summary */}
+    <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:12,marginBottom:16}}>
+      {[["Pending",fmtL(totals.pending),C.orange,emdTenders.filter(t=>t.emdStatus==="pending").length],
+        ["Submitted",fmtL(totals.submitted),C.blue,emdTenders.filter(t=>t.emdStatus==="submitted").length],
+        ["Refunded",fmtL(totals.refunded),C.green,emdTenders.filter(t=>t.emdStatus==="refunded").length],
+        ["Forfeited",fmtL(totals.forfeited),C.red,emdTenders.filter(t=>t.emdStatus==="forfeited").length],
+      ].map(([l,v,c,cnt])=><div key={l} style={{background:"white",border:`1px solid ${C.border}`,borderRadius:10,padding:14}}>
+        <div style={{fontSize:18,fontWeight:700,color:c}}>{v}</div>
+        <div style={{fontSize:11,color:"#6b7280",marginTop:2}}>{l} · {cnt} bids</div>
+      </div>)}
     </div>
+
+    {/* Tabs */}
+    <div style={{display:"flex",borderBottom:`1px solid ${C.border}`,marginBottom:14}}>
+      {[["tracker","EMD Tracker"],["reconciliation","EMD Reconciliation — CBOD & Accounts"]].map(([k,l])=>
+        <button key={k} onClick={()=>setActiveTab(k)} style={{padding:"8px 18px",fontSize:12,fontWeight:500,border:"none",background:"none",cursor:"pointer",borderBottom:`2px solid ${activeTab===k?C.blue:"transparent"}`,color:activeTab===k?C.blue:"#6b7280"}}>{l}</button>
+      )}
+    </div>
+
+    {/* Update Modal */}
     {editing&&<div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.5)",zIndex:60,display:"flex",alignItems:"center",justifyContent:"center",padding:20}}>
-      <Card style={{width:"100%",maxWidth:440}}>
-        <div style={{fontSize:14,fontWeight:700,color:C.dark,marginBottom:12}}>Update EMD — {editing.ref}</div>
+      <Card style={{width:"100%",maxWidth:480}}>
+        <div style={{fontSize:14,fontWeight:700,color:C.dark,marginBottom:4}}>Update EMD — {editing.ref}</div>
+        <div style={{fontSize:11,color:"#9ca3af",marginBottom:12}}>{editing.emdCode||"No EMD Code"} · {editing.title}</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginBottom:12}}>
-          <FG label="Status" col="1/-1"><Select value={ef.emdStatus||editing.emdStatus||"pending"} onChange={e=>setEf(p=>({...p,emdStatus:e.target.value}))}>{["pending","submitted","refunded","forfeited","not_required"].map(s=><option key={s} value={s}>{s.replace(/_/g," ")}</option>)}</Select></FG>
-          <FG label="Bid Mode"><Select value={ef.bidMode||editing.bidMode||""} onChange={e=>setEf(p=>({...p,bidMode:e.target.value}))}><option value="">Select...</option>{["Bank Guarantee","Demand Draft (DD)","Online Payment","NEFT/RTGS","Fixed Deposit","Insurance Bond"].map(s=><option key={s} value={s}>{s}</option>)}</Select></FG>
-          <FG label="DD / Payment Details"><Input value={ef.ddDetails??editing.ddDetails??""} onChange={e=>setEf(p=>({...p,ddDetails:e.target.value}))}/></FG>
+          <FG label="EMD Status" col="1/-1">
+            <Select value={ef.emdStatus||editing.emdStatus||"pending"} onChange={e=>setEf(p=>({...p,emdStatus:e.target.value}))}>
+              {["pending","submitted","refunded","forfeited","not_required"].map(s=><option key={s} value={s}>{s.replace(/_/g," ")}</option>)}
+            </Select>
+          </FG>
+          <FG label="EMD Process Stage" col="1/-1">
+            <Select value={ef.emdProcessStage||editing.emdProcessStage||""} onChange={e=>setEf(p=>({...p,emdProcessStage:e.target.value}))}>
+              <option value="">Select stage...</option>
+              {EMD_PROCESS_STAGES.map(s=><option key={s} value={s}>{s}</option>)}
+            </Select>
+          </FG>
+          <FG label="EMD Mode"><Select value={ef.bidMode||editing.bidMode||""} onChange={e=>setEf(p=>({...p,bidMode:e.target.value}))}><option value="">Select...</option>{["Bank Guarantee","Demand Draft (DD)","Online Payment","NEFT/RTGS","Fixed Deposit","Insurance Bond"].map(s=><option key={s} value={s}>{s}</option>)}</Select></FG>
+          <FG label="Due Date / Last Submission"><Input type="date" value={ef.emdDueDate||editing.emdDueDate||""} onChange={e=>setEf(p=>({...p,emdDueDate:e.target.value}))}/></FG>
+          <FG label="DD / Payment Details" col="1/-1"><Input value={ef.ddDetails??editing.ddDetails??""} onChange={e=>setEf(p=>({...p,ddDetails:e.target.value}))}/></FG>
         </div>
         <div style={{display:"flex",justifyContent:"flex-end",gap:8}}>
           <BtnSec onClick={()=>{setEditing(null);setEf({});}}>Cancel</BtnSec>
-          <Btn onClick={()=>{setTenders(prev=>prev.map(t=>t.id===editing.id?{...t,...ef,auditLog:[...(t.auditLog||[]),{action:"EMD_UPDATED",by:user.name,role:user.role,at:new Date().toLocaleString("en-IN"),note:`Status: ${ef.emdStatus||editing.emdStatus}`}]}:t));showToast("EMD updated");setEditing(null);setEf({});}}>Save</Btn>
+          <Btn onClick={()=>{
+            setTenders(prev=>prev.map(t=>t.id===editing.id?{...t,...ef,auditLog:[...(t.auditLog||[]),{action:"EMD_UPDATED",by:user.name,role:user.role,at:new Date().toLocaleString("en-IN"),note:`Status: ${ef.emdStatus||editing.emdStatus} · Stage: ${ef.emdProcessStage||editing.emdProcessStage||"—"}`}]}:t));
+            showToast("EMD updated");setEditing(null);setEf({});
+          }}>Save</Btn>
         </div>
       </Card>
     </div>}
-    <Card style={{padding:0,overflow:"hidden"}}>
-      <table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
-        <thead><tr style={{background:"#f8fbff",borderBottom:`1px solid ${C.border}`}}>{["Ref","Title","Division","EMD Amount","Bid Mode","Status",""].map(h=><th key={h} style={{textAlign:"left",padding:"10px 14px",fontSize:11,fontWeight:700,color:"#6b7280"}}>{h}</th>)}</tr></thead>
-        <tbody>
-          {emdTenders.map(t=>{const sc=SC[t.emdStatus]||{c:"#6b7280",bg:"#f9fafb"};return <tr key={t.id} style={{borderBottom:`1px solid #f3f4f6`}}>
-            <td style={{padding:"10px 14px",fontFamily:"monospace",fontSize:11,color:"#6b7280"}}>{t.ref}</td>
-            <td style={{padding:"10px 14px",fontWeight:500,maxWidth:180,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{t.title}</td>
-            <td style={{padding:"10px 14px",color:"#6b7280"}}>{t.div||"—"}</td>
-            <td style={{padding:"10px 14px",fontWeight:700}}>{fmtL(t.emd)}</td>
-            <td style={{padding:"10px 14px",color:"#6b7280"}}>{t.bidMode||"—"}</td>
-            <td style={{padding:"10px 14px"}}><span style={{padding:"2px 8px",borderRadius:999,fontSize:11,fontWeight:600,color:sc.c,background:sc.bg}}>{(t.emdStatus||"pending").replace(/_/g," ")}</span></td>
-            <td style={{padding:"10px 14px"}}>{canUpdate&&<button onClick={()=>{setEditing(t);setEf({});}} style={{fontSize:11,color:C.blue,background:"none",border:"none",cursor:"pointer",fontWeight:600}}>Update</button>}</td>
-          </tr>;})}
-          {emdTenders.length===0&&<tr><td colSpan={7} style={{textAlign:"center",padding:32,color:"#9ca3af"}}>No EMD records</td></tr>}
-        </tbody>
-      </table>
-    </Card>
+
+    {/* TAB: EMD TRACKER */}
+    {activeTab==="tracker"&&<Card style={{padding:0,overflow:"hidden"}}>
+      <div style={{overflowX:"auto"}}>
+        <table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
+          <thead><tr style={{background:"#f8fbff",borderBottom:`1px solid ${C.border}`}}>
+            {["EMD Code","Ref","Title","Division","EMD Amount","EMD Mode","Due Date / Last Submission","EMD Process Stage","Status",""].map(h=><th key={h} style={{textAlign:"left",padding:"10px 12px",fontSize:11,fontWeight:700,color:"#6b7280",whiteSpace:"nowrap"}}>{h}</th>)}
+          </tr></thead>
+          <tbody>
+            {emdTenders.map(t=>{
+              const sc=SC[t.emdStatus]||{c:"#6b7280",bg:"#f9fafb"};
+              const stageColors={"Requested":"#6b7280","Under Finance Review":"#d97706","Submitted":"#0077B6","Refund Due":"#dc2626","Refunded":"#15803d"};
+              const stageC=stageColors[t.emdProcessStage]||"#6b7280";
+              return <tr key={t.id} style={{borderBottom:`1px solid #f3f4f6`}}>
+                <td style={{padding:"10px 12px",fontFamily:"monospace",fontSize:11,color:C.blue,fontWeight:600}}>{t.emdCode||"—"}</td>
+                <td style={{padding:"10px 12px",fontFamily:"monospace",fontSize:11,color:"#6b7280"}}>{t.ref}</td>
+                <td style={{padding:"10px 12px",fontWeight:500,maxWidth:160,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{t.title}</td>
+                <td style={{padding:"10px 12px",color:"#6b7280"}}>{t.div||"—"}</td>
+                <td style={{padding:"10px 12px",fontWeight:700}}>{fmtL(t.emd)}</td>
+                <td style={{padding:"10px 12px",color:"#6b7280"}}>{t.bidMode||t.emdMode||"—"}</td>
+                <td style={{padding:"10px 12px",color:"#6b7280"}}>{t.emdDueDate||t.dl||"—"}</td>
+                <td style={{padding:"10px 12px"}}>
+                  {t.emdProcessStage
+                    ? <span style={{padding:"2px 8px",borderRadius:999,fontSize:11,fontWeight:600,color:stageC,background:stageC+"22"}}>{t.emdProcessStage}</span>
+                    : <span style={{color:"#9ca3af",fontSize:11}}>—</span>
+                  }
+                </td>
+                <td style={{padding:"10px 12px"}}><span style={{padding:"2px 8px",borderRadius:999,fontSize:11,fontWeight:600,color:sc.c,background:sc.bg}}>{(t.emdStatus||"pending").replace(/_/g," ")}</span></td>
+                <td style={{padding:"10px 12px"}}>{canUpdate&&<button onClick={()=>{setEditing(t);setEf({});}} style={{fontSize:11,color:C.blue,background:"none",border:"none",cursor:"pointer",fontWeight:600}}>Update</button>}</td>
+              </tr>;
+            })}
+            {emdTenders.length===0&&<tr><td colSpan={10} style={{textAlign:"center",padding:32,color:"#9ca3af"}}>No EMD records</td></tr>}
+          </tbody>
+        </table>
+      </div>
+    </Card>}
+
+    {/* TAB: EMD RECONCILIATION */}
+    {activeTab==="reconciliation"&&<div>
+      <div style={{background:"#f8fbff",border:`1px solid ${C.border}`,borderRadius:10,padding:"12px 16px",marginBottom:14}}>
+        <div style={{fontSize:12,color:"#6b7280"}}>Consolidated reconciliation view of EMD payments, refund status, pending balances and CBOD remarks.</div>
+      </div>
+
+      {/* Filters */}
+      <Card style={{padding:12,marginBottom:12,display:"flex",gap:8,flexWrap:"wrap",alignItems:"center"}}>
+        <Input value={reconSearch} onChange={e=>setReconSearch(e.target.value)} placeholder="Search by EMD Code, Tender ID, Project Name..." style={{flex:1,minWidth:220}}/>
+        <button onClick={()=>setReconSearch("")} style={{padding:"6px 12px",background:"#f3f4f6",border:`1px solid ${C.border}`,borderRadius:7,fontSize:12,cursor:"pointer",color:"#6b7280"}}>Reset</button>
+      </Card>
+
+      <Card style={{padding:0,overflow:"hidden"}}>
+        <div style={{overflowX:"auto"}}>
+          <table style={{width:"100%",borderCollapse:"collapse",fontSize:11}}>
+            <thead><tr style={{background:"#f8fbff",borderBottom:`1px solid ${C.border}`}}>
+              {["EMD Code","Reconciliation Status","Tender ID","Project Name","Bank","Payment Mode","CHQ/NEFT/DD No.","Issued Date","Issued Amount (₹)","Balance (₹)","Beneficiary","Requested / Lead By","Board / Dept","CBOD Remarks"].map(h=>
+                <th key={h} style={{textAlign:"left",padding:"9px 12px",fontSize:10,fontWeight:700,color:"#6b7280",whiteSpace:"nowrap"}}>{h}</th>
+              )}
+            </tr></thead>
+            <tbody>
+              {reconFiltered.map(t=>{
+                const rStatusColors={"CBOD to Retrieve":"#7c3aed","Pending for Long Time":"#dc2626","PBG Payment":"#d97706","Refund in Process":"#0077B6","Tender Under Evaluation":"#a21caf","Awarded Tenders":"#15803d","Joint Follow-up":"#0d9488"};
+                const rStatus=t.reconStatus||"CBOD to Retrieve";
+                const rC=rStatusColors[rStatus]||"#6b7280";
+                return <tr key={t.id} style={{borderBottom:`1px solid #f3f4f6`}}>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",color:C.blue,fontWeight:600}}>{t.emdCode||"—"}</td>
+                  <td style={{padding:"8px 12px"}}>
+                    {canUpdate
+                      ? <select value={t.reconStatus||""} onChange={e=>{
+                          setTenders(prev=>prev.map(x=>x.id===t.id?{...x,reconStatus:e.target.value}:x));
+                          showToast("Recon status updated","info");
+                        }} style={{padding:"3px 6px",border:`1px solid ${rC}`,borderRadius:6,fontSize:11,color:rC,background:rC+"11",cursor:"pointer",outline:"none"}}>
+                          <option value="">Select status...</option>
+                          {RECON_STATUSES.map(s=><option key={s} value={s}>{s}</option>)}
+                        </select>
+                      : <span style={{padding:"2px 7px",borderRadius:999,fontSize:10,fontWeight:600,color:rC,background:rC+"22"}}>{rStatus}</span>
+                    }
+                  </td>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:11,color:"#6b7280"}}>{t.ref}</td>
+                  <td style={{padding:"8px 12px",fontWeight:500,maxWidth:140,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{t.title}</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>{t.bidMode?.includes("Bank")||t.emdMode?.includes("Bank")?"HDFC Bank":"SBI"}</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>{t.bidMode||t.emdMode||"—"}</td>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:10,color:"#6b7280"}}>{t.ddDetails||"—"}</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>{t.emdDueDate||t.dl||"—"}</td>
+                  <td style={{padding:"8px 12px",fontWeight:600,textAlign:"right"}}>{t.emd.toLocaleString("en-IN")}</td>
+                  <td style={{padding:"8px 12px",textAlign:"right",color:t.emdStatus==="refunded"?C.green:"#374151",fontWeight:600}}>
+                    {t.emdStatus==="refunded"?"0":(t.emd||0).toLocaleString("en-IN")}
+                  </td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>Quality Council of India</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>{t.suggestedPL||"CBOD Team"}</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280"}}>{t.div||"—"}</td>
+                  <td style={{padding:"8px 12px",color:"#6b7280",maxWidth:150,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{t.cbodRemarks||"—"}</td>
+                </tr>;
+              })}
+              {reconFiltered.length===0&&<tr><td colSpan={14} style={{textAlign:"center",padding:32,color:"#9ca3af"}}>No EMD records found</td></tr>}
+            </tbody>
+          </table>
+        </div>
+        <div style={{padding:"10px 16px",borderTop:`1px solid #f3f4f6`,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+          <div style={{fontSize:11,color:"#9ca3af"}}>{reconFiltered.length} records</div>
+          <button onClick={()=>showToast("Export to Excel — available in production","info")} style={{padding:"5px 12px",background:"#f0fdf4",border:`1px solid #bbf7d0`,borderRadius:6,fontSize:11,cursor:"pointer",color:C.green,fontWeight:600}}>⬇ Export to Excel</button>
+        </div>
+      </Card>
+    </div>}
   </div>;
 }
 
-// ─── KNOWLEDGE BASE ───────────────────────────────────────────
-function KnowledgePage({allItems,goBack}) {
-  const records=allItems.flatMap(item=>(item.auditLog||[]).filter(e=>e.action!=="COMMENT"&&e.action!=="CREATED").map(e=>({...e,itemRef:item.ref,itemTitle:item.title,itemType:item.type,div:item.div})));
-  const [filter,setFilter]=useState("all");
-  const shown=filter==="all"?records:records.filter(r=>r.action.toLowerCase().includes(filter));
+// ─── APPROVAL & ACTION HISTORY REPOSITORY ────────────────────
+function KnowledgePage({allItems,navTo,goBack}) {
+  const allRecords=allItems.flatMap(item=>(item.auditLog||[]).filter(e=>e.action!=="COMMENT").map(e=>({
+    ...e,
+    itemRef:item.ref,itemTitle:item.title,itemType:item.type,itemDiv:item.div,itemId:item.id,
+  }))).sort((a,b)=>new Date(b.at)-new Date(a.at));
+
+  const [search,setSearch]=useState("");
+  const [fromDate,setFromDate]=useState("");
+  const [toDate,setToDate]=useState("");
+  const [activeTab,setActiveTab]=useState("all");
+
+  const tabs=[
+    {key:"all",label:"All",fn:r=>true},
+    {key:"approvals",label:"Approvals",fn:r=>r.action.toUpperCase().includes("APPROV")},
+    {key:"rejections",label:"Rejections",fn:r=>r.action.toUpperCase().includes("REJECT")},
+    {key:"sent_back",label:"Sent Back",fn:r=>r.action.toUpperCase().includes("SEND_BACK")||r.action.toUpperCase().includes("SENT_BACK")},
+    {key:"cancellations",label:"Cancellations",fn:r=>r.action.toUpperCase().includes("CANCEL")},
+    {key:"emd",label:"EMD Updates",fn:r=>r.action.toUpperCase().includes("EMD")},
+  ];
+
+  const filtered=allRecords.filter(r=>{
+    const tabFn=tabs.find(t=>t.key===activeTab)?.fn||(() =>true);
+    if(!tabFn(r)) return false;
+    if(search){
+      const s=search.toLowerCase();
+      if(!r.itemRef?.toLowerCase().includes(s)&&!r.itemTitle?.toLowerCase().includes(s)&&!r.by?.toLowerCase().includes(s)&&!r.note?.toLowerCase().includes(s)&&!r.action?.toLowerCase().includes(s)) return false;
+    }
+    if(fromDate&&r.at&&new Date(r.at)<new Date(fromDate)) return false;
+    if(toDate&&r.at&&new Date(r.at)>new Date(toDate+" 23:59:59")) return false;
+    return true;
+  });
+
+  const tabCount=key=>key==="all"?allRecords.length:allRecords.filter(tabs.find(t=>t.key===key)?.fn||(() =>false)).length;
+
+  const actionColor=action=>{
+    const a=action.toUpperCase();
+    if(a.includes("APPROV")) return C.green;
+    if(a.includes("REJECT")||a.includes("CANCEL")) return C.red;
+    if(a.includes("SEND_BACK")||a.includes("SENT")) return C.orange;
+    if(a.includes("EMD")) return "#7c3aed";
+    return C.blue;
+  };
+
   return <div style={{maxWidth:"100%"}}>
-    <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
+    <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:8}}>
       <button onClick={goBack} style={{background:"none",border:`1px solid ${C.border}`,borderRadius:8,padding:"5px 12px",cursor:"pointer",fontSize:12,color:"#6b7280"}}>← Back</button>
-      <div><h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Knowledge Repository</h1><div style={{fontSize:12,color:"#6b7280",marginTop:2}}>Full approval/rejection/send-back history</div></div>
+      <div>
+        <h1 style={{margin:0,fontSize:20,fontWeight:700,color:C.dark}}>Approval & Action History Repository</h1>
+        <div style={{fontSize:12,color:"#6b7280",marginTop:2}}>Complete audit trail of approvals, rejections, send-backs, cancellations and EMD updates.</div>
+      </div>
     </div>
-    <div style={{display:"flex",gap:8,marginBottom:14,flexWrap:"wrap"}}>
-      {[["all","All"],["approve","Approvals"],["reject","Rejections"],["send_back","Sent Back"],["cancel","Cancellations"],["emd","EMD Updates"]].map(([k,l])=><button key={k} onClick={()=>setFilter(k)} style={{padding:"6px 14px",borderRadius:8,border:`1px solid ${filter===k?C.blue:C.border}`,background:filter===k?C.blue:"white",color:filter===k?"white":"#6b7280",fontSize:12,cursor:"pointer"}}>{l} {filter===k?`(${shown.length})`:""}</button>)}
+
+    {/* Search + date filters */}
+    <Card style={{padding:12,marginBottom:14,display:"flex",gap:8,flexWrap:"wrap",alignItems:"center"}}>
+      <Input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search by Bid Ref, Title, User, Action Type, Remarks..." style={{flex:1,minWidth:240}}/>
+      <div style={{display:"flex",gap:6,alignItems:"center"}}>
+        <span style={{fontSize:11,color:"#9ca3af",flexShrink:0}}>From</span>
+        <Input type="date" value={fromDate} onChange={e=>setFromDate(e.target.value)} style={{width:130}}/>
+      </div>
+      <div style={{display:"flex",gap:6,alignItems:"center"}}>
+        <span style={{fontSize:11,color:"#9ca3af",flexShrink:0}}>To</span>
+        <Input type="date" value={toDate} onChange={e=>setToDate(e.target.value)} style={{width:130}}/>
+      </div>
+      <button onClick={()=>{setSearch("");setFromDate("");setToDate("");}} style={{padding:"6px 12px",background:"#f3f4f6",border:`1px solid ${C.border}`,borderRadius:7,fontSize:12,cursor:"pointer",color:"#6b7280"}}>Reset</button>
+    </Card>
+
+    {/* Tabs with counts */}
+    <div style={{display:"flex",gap:2,marginBottom:14,flexWrap:"wrap",borderBottom:`1px solid ${C.border}`}}>
+      {tabs.map(t=>{
+        const cnt=tabCount(t.key);
+        return <button key={t.key} onClick={()=>setActiveTab(t.key)} style={{padding:"8px 16px",fontSize:12,fontWeight:500,border:"none",background:"none",cursor:"pointer",borderBottom:`2px solid ${activeTab===t.key?C.blue:"transparent"}`,color:activeTab===t.key?C.blue:"#6b7280",display:"flex",alignItems:"center",gap:5}}>
+          {t.label}
+          <span style={{background:activeTab===t.key?C.blue:"#e5e7eb",color:activeTab===t.key?"white":"#6b7280",fontSize:10,borderRadius:999,padding:"1px 6px",fontWeight:700}}>{cnt}</span>
+        </button>;
+      })}
     </div>
+
+    {/* Results count */}
+    <div style={{fontSize:11,color:"#9ca3af",marginBottom:10}}>Showing {Math.min(filtered.length,100)} of {filtered.length} records</div>
+
+    {/* Records */}
     <div style={{display:"flex",flexDirection:"column",gap:8}}>
-      {shown.length===0&&<Card style={{textAlign:"center",padding:40}}><div style={{color:"#9ca3af"}}>No records</div></Card>}
-      {shown.slice(0,60).map((r,i)=>{
-        const c=r.action.includes("APPROVE")?C.green:r.action.includes("REJECT")||r.action.includes("CANCEL")?C.red:r.action.includes("SEND_BACK")||r.action.includes("SENT")?C.orange:C.blue;
-        return <div key={i} style={{background:"white",border:`1px solid ${C.border}`,borderRadius:10,padding:"12px 14px",display:"flex",gap:10,alignItems:"flex-start"}}>
-          <div style={{width:8,height:8,borderRadius:999,background:c,marginTop:4,flexShrink:0}}/>
+      {filtered.length===0&&<Card style={{textAlign:"center",padding:40}}><div style={{fontSize:28,marginBottom:8}}>🔍</div><div style={{color:"#9ca3af"}}>No records match your filters</div></Card>}
+      {filtered.slice(0,100).map((r,i)=>{
+        const c=actionColor(r.action);
+        const item=allItems.find(it=>it.id===r.itemId);
+        return <div key={i} style={{background:"white",border:`1px solid ${C.border}`,borderRadius:10,padding:"12px 16px",display:"flex",gap:12,alignItems:"flex-start"}}>
+          <div style={{width:10,height:10,borderRadius:999,background:c,marginTop:4,flexShrink:0}}/>
           <div style={{flex:1,minWidth:0}}>
-            <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:4,alignItems:"center"}}>
-              <span style={{fontSize:11,fontWeight:700,color:"#111827"}}>{r.action.replace(/_/g," ")}</span>
-              <span style={{fontSize:10,padding:"1px 7px",borderRadius:999,background:r.itemType==="tender"?"#dbeafe":"#f5f3ff",color:r.itemType==="tender"?"#1d4ed8":"#7c3aed",fontWeight:600}}>{r.itemType}</span>
+            {/* Action + type + role */}
+            <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:6,alignItems:"center"}}>
+              <span style={{fontSize:12,fontWeight:700,color:"#111827",background:c+"18",padding:"2px 8px",borderRadius:6,border:`1px solid ${c}44`}}>{r.action.replace(/_/g," ")}</span>
+              <span style={{fontSize:10,padding:"2px 7px",borderRadius:999,background:r.itemType==="tender"?"#dbeafe":"#f5f3ff",color:r.itemType==="tender"?"#1d4ed8":"#7c3aed",fontWeight:600}}>{r.itemType}</span>
               <RoleChip role={r.role}/>
             </div>
-            <div style={{fontSize:11,color:"#374151",fontWeight:500}}>{r.itemRef} — {r.itemTitle}</div>
-            <div style={{fontSize:11,color:"#6b7280",marginTop:2}}>by {r.by} · {r.at}</div>
-            {r.note&&<div style={{fontSize:11,color:"#6b7280",fontStyle:"italic",marginTop:4,background:"#f9fafb",padding:"4px 8px",borderRadius:6}}>"{r.note}"</div>}
+            {/* Clickable bid ref → navigate to detail */}
+            <div style={{display:"flex",gap:8,alignItems:"center",marginBottom:4}}>
+              <button onClick={()=>item&&navTo(item.type==="tender"?"tender-detail":"nom-detail",item)}
+                style={{background:"none",border:"none",cursor:item?"pointer":"default",color:item?C.blue:"#374151",fontSize:12,fontWeight:600,padding:0,textDecoration:item?"underline":"none"}}>
+                {r.itemRef}
+              </button>
+              <span style={{fontSize:12,color:"#374151"}}>—</span>
+              <span style={{fontSize:12,color:"#374151",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",maxWidth:320}}>{r.itemTitle}</span>
+              {r.itemDiv&&<span style={{fontSize:10,color:"#9ca3af",flexShrink:0}}>{r.itemDiv}</span>}
+            </div>
+            {/* Action By + Role + DateTime */}
+            <div style={{display:"flex",gap:12,flexWrap:"wrap",fontSize:11,color:"#6b7280",alignItems:"center"}}>
+              <span>👤 <strong style={{color:"#374151"}}>{r.by||"—"}</strong></span>
+              <span>🕐 {r.at||"—"}</span>
+            </div>
+            {/* Remarks */}
+            {r.note&&<div style={{fontSize:11,color:"#6b7280",fontStyle:"italic",marginTop:6,background:"#f9fafb",padding:"5px 10px",borderRadius:6,borderLeft:`3px solid ${c}`}}>
+              💬 {r.note}
+            </div>}
           </div>
         </div>;
       })}
